@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="hisense">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>机场鸟类分布</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="apb-bg-00"><img src="images/APB_bg_00.jpg"></div>
+      <div class="apb-bg-01"></div>
+      <div class="apb-bg-02"></div>
+      <div class="apb-bg-03"></div>
+      <div class="apb-bg-04"></div>
+      <div class="apb-bg-05"></div>
+      <div class="apb-bg-06"></div>
+      <div class="apb-bg-07"></div>
+      <div class="apb-plane apb-plane-2">
+        <div class="apb-plane-wheel"></div>
+        <div class="apb-plane-body"></div>
+      </div>
+      <div class="apb-plane-shadow"></div>
+      <div class="apb-height-table-bg">
+        <div class="apb-height-table"></div>
+        <div class="apb-height-table-cursor"></div>
+        <div id="btn_level_9" class="apb-height-btn mt-22px"></div>
+        <div id="btn_level_8" class="apb-height-btn mt-2px"></div>
+        <div id="btn_level_7" class="apb-height-btn mt-2px"></div>
+        <div id="btn_level_6" class="apb-height-btn mt-2px"></div>
+        <div id="btn_level_5" class="apb-height-btn mt-2px"></div>
+        <div id="btn_level_4" class="apb-height-btn mt-2px"></div>
+        <div id="btn_level_3" class="apb-height-btn mt-2px"></div>
+        <div id="btn_level_2" class="apb-height-btn mt-2px"></div>
+        <div id="btn_level_1" class="apb-height-btn mt-2px"></div>
+        <div id="btn_level_0" class="apb-height-btn mt-2px"></div>
+      </div>
+      <div class="apb-hline apb-hline-0 current_bottom">
+        <div class="apb-hline-head">0M</div>
+        <div class="apb-hline-body"></div>
+        <div class="apb-hline-tail"></div>
+      </div>
+      <div class="apb-hline apb-hline-1 current_top">
+        <div class="apb-hline-head">100M</div>
+        <div class="apb-hline-body"></div>
+        <div class="apb-hline-tail"></div>
+      </div>
+      <div class="apb-hline apb-hline-2 high_top">
+        <div class="apb-hline-head">200M</div>
+        <div class="apb-hline-body"></div>
+        <div class="apb-hline-tail"></div>
+      </div>
+      <div class="apb-hline apb-hline-3 high_top">
+        <div class="apb-hline-head">300M</div>
+        <div class="apb-hline-body"></div>
+        <div class="apb-hline-tail"></div>
+      </div>
+      <div class="apb-hline apb-hline-4 high_top">
+        <div class="apb-hline-head">400M</div>
+        <div class="apb-hline-body"></div>
+        <div class="apb-hline-tail"></div>
+      </div>
+      <div class="apb-hline apb-hline-5 high_top">
+        <div class="apb-hline-head">500M</div>
+        <div class="apb-hline-body"></div>
+        <div class="apb-hline-tail"></div>
+      </div>
+      <div class="apb-hline apb-hline-6 high_top">
+        <div class="apb-hline-head">600M</div>
+        <div class="apb-hline-body"></div>
+        <div class="apb-hline-tail"></div>
+      </div>
+      <div class="apb-hline apb-hline-7 high_top">
+        <div class="apb-hline-head">700M</div>
+        <div class="apb-hline-body"></div>
+        <div class="apb-hline-tail"></div>
+      </div>
+      <div class="apb-hline apb-hline-8 high_top">
+        <div class="apb-hline-head">800M</div>
+        <div class="apb-hline-body"></div>
+        <div class="apb-hline-tail"></div>
+      </div>
+      <div class="apb-hline apb-hline-9 high_top">
+        <div class="apb-hline-head">900M</div>
+        <div class="apb-hline-body"></div>
+        <div class="apb-hline-tail"></div>
+      </div>
+      <div class="apb-hline apb-hline-10 high_top">
+        <div class="apb-hline-head">1000M</div>
+        <div class="apb-hline-body"></div>
+        <div class="apb-hline-tail"></div>
+      </div>
+      <div class="apb_birds_group apb_birds_0 apb_birds_group_current">
+        <div class="app_birds_group_bg_left"></div>
+        <div class="app_birds_group_bg_right"></div>
+        <div id="apb_bird_1" style="top:30%; left:20%;" class="apb_bird_btn"><img src="images/bird/白鹭.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">白鹭
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_2" style="top:74%; left:10%;" class="apb_bird_btn"><img src="images/bird/牛背鹭.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">牛背鹭
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_3" style="top:54%; left:28%;" class="apb_bird_btn"><img src="images/bird/绿翅鸭.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">绿翅鸭
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_4" style="top:14%; left:58%;" class="apb_bird_btn"><img src="images/bird/鹊鹞.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">鹊鹞
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="apb_birds_group apb_birds_1 apb_birds_group_high">
+        <div class="app_birds_group_bg_left"></div>
+        <div class="app_birds_group_bg_right"></div>
+        <div id="apb_bird_5" style="top:75%; left:25%;" class="apb_bird_btn"><img src="images/bird/红脚隼.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">红脚隼
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_6" style="top:50%; left:48%;" class="apb_bird_btn"><img src="images/bird/燕隼.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">燕隼
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_7" style="top:30%; left:30%;" class="apb_bird_btn"><img src="images/bird/红隼.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">红隼
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="apb_birds_group apb_birds_2 apb_birds_group_high">
+        <div class="app_birds_group_bg_left"></div>
+        <div class="app_birds_group_bg_right"></div>
+        <div id="apb_bird_8" style="top:50%; left:50%;" class="apb_bird_btn"><img src="images/bird/普通燕鸻.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">普通燕鸻
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_9" style="top:70%; left:30%;" class="apb_bird_btn"><img src="images/bird/环颈雉.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">环颈雉
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_10" style="top:34%; left:10%;" class="apb_bird_btn"><img src="images/bird/鹌鹑.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">鹌鹑
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_11" style="top:18%; left:40%;" class="apb_bird_btn"><img src="images/bird/骨顶鸡.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">骨顶鸡
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="apb_birds_group apb_birds_3 apb_birds_group_high">
+        <div class="app_birds_group_bg_left"></div>
+        <div class="app_birds_group_bg_right"></div>
+        <div id="apb_bird_12" style="top:15%; left:50%;" class="apb_bird_btn"><img src="images/bird/灰头麦鸡.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">灰头麦鸡
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_13" style="top:58%; left:36%;" class="apb_bird_btn"><img src="images/bird/凤头麦鸡.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">凤头麦鸡
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_14" style="top:22%; left:16%;" class="apb_bird_btn"><img src="images/bird/金眶鸻.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">金眶鸻
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="apb_birds_group apb_birds_4 apb_birds_group_high">
+        <div class="app_birds_group_bg_left"></div>
+        <div class="app_birds_group_bg_right"></div>
+        <div id="apb_bird_15" style="top:57%; left:10%;" class="apb_bird_btn"><img src="images/bird/扇尾沙锥.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">扇尾沙锥
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_16" style="top:68%; left:52%;" class="apb_bird_btn"><img src="images/bird/丘鹬.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">丘鹬
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_17" style="top:40%; left:28%;" class="apb_bird_btn"><img src="images/bird/白腰草鹬.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">白腰草鹬
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_18" style="top:21%; left:41%;" class="apb_bird_btn"><img src="images/bird/环颈鸻.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">环颈鸻
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="apb_birds_group apb_birds_5 apb_birds_group_high">
+        <div class="app_birds_group_bg_left"></div>
+        <div class="app_birds_group_bg_right"></div>
+        <div id="apb_bird_19" style="top:56%; left:45%;" class="apb_bird_btn"><img src="images/bird/山斑鸠.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">山斑鸠
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_20" style="top:75%; left:25%;" class="apb_bird_btn"><img src="images/bird/大杜鹃.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">大杜鹃
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_21" style="top:42%; left:18%;" class="apb_bird_btn"><img src="images/bird/家鸽.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">家鸽
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_22" style="top:19%; left:51%;" class="apb_bird_btn"><img src="images/bird/矶鹬.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">矶鹬
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="apb_birds_group apb_birds_6 apb_birds_group_high">
+        <div class="app_birds_group_bg_left"></div>
+        <div class="app_birds_group_bg_right"></div>
+        <div id="apb_bird_23" style="top:20%; left:45%;" class="apb_bird_btn"><img src="images/bird/云雀.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">云雀
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_24" style="top:60%; left:15%;" class="apb_bird_btn"><img src="images/bird/金腰燕.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">金腰燕
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_25" style="top:66%; left:36%;" class="apb_bird_btn"><img src="images/bird/家燕.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">家燕
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_26" style="top:42%; left:56%;" class="apb_bird_btn"><img src="images/bird/短耳鸮.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">短耳鸮
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_27" style="top:27%; left:24%;" class="apb_bird_btn"><img src="images/bird/纵纹腹小鸮.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">纵纹腹小鸮
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="apb_birds_group apb_birds_7 apb_birds_group_high">
+        <div class="app_birds_group_bg_left"></div>
+        <div class="app_birds_group_bg_right"></div>
+        <div id="apb_bird_28" style="top:27%; left:62%;" class="apb_bird_btn"><img src="images/bird/戴胜.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">戴胜
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_29" style="top:70%; left:24%;" class="apb_bird_btn"><img src="images/bird/田鹨.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">田鹨
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_30" style="top:62%; left:39%;" class="apb_bird_btn"><img src="images/bird/红尾伯劳.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">红尾伯劳
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_31" style="top:32%; left:15%;" class="apb_bird_btn"><img src="images/bird/八哥.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">八哥
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="apb_birds_group apb_birds_8 apb_birds_group_high">
+        <div class="app_birds_group_bg_left"></div>
+        <div class="app_birds_group_bg_right"></div>
+        <div id="apb_bird_32" style="top:51%; left:12%;" class="apb_bird_btn"><img src="images/bird/小鹀.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">小鹀
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_33" style="top:72%; left:42%;" class="apb_bird_btn"><img src="images/bird/麻雀.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">麻雀
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_34" style="top:22%; left:25%;" class="apb_bird_btn"><img src="images/bird/三道眉草鹀.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">三道眉草鹀
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="apb_birds_group apb_birds_9 apb_birds_group_high">
+        <div class="app_birds_group_bg_left"></div>
+        <div class="app_birds_group_bg_right"></div>
+        <div id="apb_bird_35" style="top:42%; left:19%;" class="apb_bird_btn"><img src="images/bird/灰头鹀.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">灰头鹀
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_36" style="top:65%; left:58%;" class="apb_bird_btn"><img src="images/bird/黄胸鹀.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">黄胸鹀
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+        <div id="apb_bird_37" style="top:26%; left:32%;" class="apb_bird_btn"><img src="images/bird/苇鹀.gif">
+          <div class="apb_bird_hover"></div>
+          <div class="apb_bird_hover_title">苇鹀
+            <div class="apb_bird_hover_title_arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="apb-search">
+        <div class="apb-search-bg"></div>
+        <div class="apb-search-box space-16px">
+          <div class="inner-content">
+            <form>
+              <div class="col-1of2">
+                <div class="col-content">
+                  <div class="form-control">
+                    <div class="col-1of3">
+                      <div class="control-label apb-search-label">鸟类名称：</div>
+                    </div>
+                    <div class="col-2of3">
+                      <input type="text" class="input-text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1of2">
+                <div class="col-content">
+                  <div class="form-control">
+                    <div class="col-1of3">
+                      <div class="control-label apb-search-label">飞行高度：</div>
+                    </div>
+                    <div class="col-2of3">
+                      <div class="col-4of9">
+                        <input type="text" class="input-text">
+                      </div>
+                      <div class="col-1of9">
+                        <div class="control-label text-center">~</div>
+                      </div>
+                      <div class="col-4of9">
+                        <input type="text" class="input-text">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1of2">
+                <div class="col-content">
+                  <div class="form-control">
+                    <div class="col-1of3">
+                      <div class="control-label apb-search-label">活跃期：</div>
+                    </div>
+                    <div class="col-2of3">
+                      <input type="text" class="input-text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3of8">
+                <div class="col-content">
+                  <div class="form-control">
+                    <div class="col-1of3">
+                      <div class="control-label apb-search-label">危险等级：</div>
+                    </div>
+                    <div class="col-2of3">
+                      <select class="input-select">
+                        <option value="全部">全部</option>
+                        <option value="1">一级</option>
+                        <option value="2">二级</option>
+                        <option value="3">三级</option>
+                        <option value="4">四级</option>
+                        <option value="5">五级</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1of8">
+                <div class="col-content">
+                  <div class="common-btn btn-circle2px btn-block">查询</div>
+                </div>
+              </div>
+            </form>
+            <div class="col-4of7">
+              <div class="col-content apb-search-block">
+                <table class="table small-padding">
+                  <tr class="text-center">
+                    <td class="th">中文名</td>
+                    <td class="th">英文名</td>
+                    <td class="th">危害等级</td>
+                    <td class="th">飞行高度</td>
+                    <td class="th">备注</td>
+                    <td class="th">活跃期</td>
+                  </tr>
+                  <tr>
+                    <td>苇鹀</td>
+                    <td>Emberiza pallasi</td>
+                    <td class="text-right">3</td>
+                    <td class="text-right">967</td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr class="sel">
+                    <td>灰头鹀</td>
+                    <td>Emberiza spodocephala</td>
+                    <td class="text-right">3</td>
+                    <td class="text-right">928</td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>黄胸鹀</td>
+                    <td>Emberiza aureola</td>
+                    <td class="text-right">3</td>
+                    <td class="text-right">901</td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>三道眉草鹀</td>
+                    <td>Emberiza cioides</td>
+                    <td class="text-right">3</td>
+                    <td class="text-right">880</td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>小鹀</td>
+                    <td>Emberiza pusilla</td>
+                    <td class="text-right">3</td>
+                    <td class="text-right">865</td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>麻雀</td>
+                    <td>Passer montanus</td>
+                    <td class="text-right">4</td>
+                    <td class="text-right">808</td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>八哥</td>
+                    <td>Acridotheres cristatellus</td>
+                    <td class="text-right">3</td>
+                    <td class="text-right">790</td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>红尾伯劳</td>
+                    <td>Lanius cristatus</td>
+                    <td class="text-right">3</td>
+                    <td class="text-right">749</td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>戴胜</td>
+                    <td>Upupa epops</td>
+                    <td class="text-right">3</td>
+                    <td class="text-right">739</td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>田鹨</td>
+                    <td>Anthus richardi</td>
+                    <td class="text-right">5</td>
+                    <td class="text-right">719</td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="col-3of7">
+              <div class="col-content mb-0px">
+                <div class="col-1of2">
+                  <div class="apb-search-imgbox"><img src="images/birdimg/灰头鹀.jpg">
+                    <div class="apb-search-birdname">灰头鹀</div>
+                    <div class="apb-search-birdname-en">Emberiza spodocephala</div>
+                    <div class="apb-search-bird-param mt-4px">飞行高度：900 ~ 1000M</div>
+                    <div class="apb-search-bird-param">
+                       
+                      危害等级：
+                      <div class="apb-stars apb-stars-3">
+                        <div class="apb-stars-sel"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1of2">
+                  <div class="apb-search-block apb-search-birdinfo">
+                    <div class="apb-search-birdinfo-title">形态特征</div>
+                    <div class="apb-search-birdinfo-text">全长约140mm。雄鸟的头、颈背及喉灰，眼先及颏黑；上体余部浓栗色而具明显的黑色纵纹；雌鸟及冬季雄鸟头橄榄色，过眼纹及耳覆羽下的月牙形斑纹黄色。</div>
+                    <div class="apb-search-birdinfo-title">生态特征</div>
+                    <div class="apb-search-birdinfo-text">栖于平原以至高山（海拔3000m）的灌木丛间，也见于公园的矮林、杨柳树上，在篱笆、电线杆或电线上都有踪迹。杂食性，以植物为主，多为杂草种子，也啄食昆虫。</div>
+                    <div class="apb-search-birdinfo-title">灭杀方法</div>
+                    <div class="apb-search-birdinfo-text">在场内外排水沟及有苇草的地段，每1.5~2m设低网捕捉，在冬季毒饵诱杀，猎杀驱赶，控制集群等。</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="apb-calendar">
+        <div class="apb-calendar-bg"></div>
+        <div class="apb-calendar-box space-14px">
+          <div class="inner-content">
+            <div class="col-1of1">
+              <div class="col-content">
+                <div class="apb-calendar-info">
+                  <div class="calendar-container">
+                    <table>
+                      <tr>
+                        <td colspan="7">
+                          <div class="calendar-month">
+                            <!--a.btn-prev-month(href="#") &lt;-->2016年4月
+                            <!--a.btn-next-month(href="#") &gt;-->
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="calendar-week">一</div>
+                        </td>
+                        <td>
+                          <div class="calendar-week">二</div>
+                        </td>
+                        <td>
+                          <div class="calendar-week">三</div>
+                        </td>
+                        <td>
+                          <div class="calendar-week">四</div>
+                        </td>
+                        <td>
+                          <div class="calendar-week">五</div>
+                        </td>
+                        <td>
+                          <div class="calendar-week weekend">六</div>
+                        </td>
+                        <td>
+                          <div class="calendar-week weekend">日</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="calendar-day not-this-month">
+                            <div class="date">28</div>
+                            <div class="cn-date">二十</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day not-this-month">
+                            <div class="date">29</div>
+                            <div class="cn-date">廿一</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day not-this-month">
+                            <div class="date">30</div>
+                            <div class="cn-date">廿二</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day not-this-month">
+                            <div class="date">31</div>
+                            <div class="cn-date">廿三</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">1</div>
+                            <div class="cn-date">愚人节</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day weekend">
+                            <div class="date">2</div>
+                            <div class="cn-date">廿五</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day weekend">
+                            <div class="date">3</div>
+                            <div class="cn-date">廿六</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">4</div>
+                            <div class="cn-date">清明</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">5</div>
+                            <div class="cn-date">廿八</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">6</div>
+                            <div class="cn-date">廿九</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">7</div>
+                            <div class="cn-date">三月</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">8</div>
+                            <div class="cn-date">初二</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day weekend">
+                            <div class="date">9</div>
+                            <div class="cn-date">初三</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day weekend">
+                            <div class="date">10</div>
+                            <div class="cn-date">初四</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">11</div>
+                            <div class="cn-date">初五</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">12</div>
+                            <div class="cn-date">初六</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">13</div>
+                            <div class="cn-date">初七</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">14</div>
+                            <div class="cn-date">初八</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">15</div>
+                            <div class="cn-date">初九</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day weekend">
+                            <div class="date">16</div>
+                            <div class="cn-date">初十</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day weekend">
+                            <div class="date">17</div>
+                            <div class="cn-date">十一</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">18</div>
+                            <div class="cn-date">十二</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">19</div>
+                            <div class="cn-date">谷雨</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">20</div>
+                            <div class="cn-date">十四</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">21</div>
+                            <div class="cn-date">十五</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">22</div>
+                            <div class="cn-date">十六</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day weekend">
+                            <div class="date">23</div>
+                            <div class="cn-date">十七</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day weekend">
+                            <div class="date">24</div>
+                            <div class="cn-date">十八</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">25</div>
+                            <div class="cn-date">十九</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">26</div>
+                            <div class="cn-date">二十</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">27</div>
+                            <div class="cn-date">廿一</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">28</div>
+                            <div class="cn-date">廿二</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day">
+                            <div class="date">29</div>
+                            <div class="cn-date">廿三</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day weekend">
+                            <div class="date">30</div>
+                            <div class="cn-date">廿四</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="calendar-day weekend not-this-month">
+                            <div class="date">1</div>
+                            <div class="cn-date">劳动节</div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="full-img with-clearfix mb-6px"><img src="images/calendar_img/calendar4.jpg"></div>
+                  <div class="apb-calendar-infoline"><span>代表鸟类：</span>寿带（ Terpsiphone  paradisi ）  俗名：长尾鹟、练鹊、三光鸟、赭练鹊。</div>
+                  <div class="apb-calendar-infoline"><span>本月常见鸟种：</span>白鹭、夜鹭、池鹭、牛背鹭、八哥、灰背椋鸟、小鸦娟、黑卷尾、白头鹎、山斑鸠、喜鹊、红隼等。</div>
+                  <div class="apb-calendar-infoline"><span>生态特征：</span>鹟亚科鸟类多见于机场及周边地区的高大乔木林及灌木丛，常见于机场内场区的草坪区，有时也出现在周边的竹林里。</div>
+                  <div class="apb-calendar-infoline"><span>活动特点：</span>常单独或成对活动，偶尔也3~5只集群活动，时常出现在机场上空，飞行速度缓慢，常从栖息的树枝飞上空中捕食昆虫。</div>
+                  <div class="apb-calendar-infoline"><span>活动强度：</span>一般在早晨5:40~8:30分活动强度高，随后强度慢慢下降；16:00开始活动强度上升，18:00活动强度开始下降。</div>
+                  <div class="apb-calendar-infoline"><span>危害等级：</span>++（国内没有鸟击征候的案例）</div>
+                  <div class="apb-calendar-infoline"><span>治理措施：</span>平常应注意对寿带活动强度的观察，尤其要注意在5~7月份的繁殖季节，工作人员要加大对内场区寿带的巡查力度和驱赶力度，可在机场架设捕鸟网和声波驱鸟器，也可适当投毒，阻止寿带种群的扩散；同时也要做好机场内场区的昆虫灭杀工作，如配制灭杀昆虫的药剂，可有效切断寿带鸟的食源。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="apb-head">
+        <div class="apb-head-left"></div>
+        <div class="apb-head-center"></div>
+        <div class="apb-head-right">
+          <!--.apb-btn-search 查&nbsp;询-->
+          <!--.apb-btn-fly(style="display:none;") 飞行分布-->
+          <!--.apb-btn-fullscreen.apb-btn-fullscreen-enter#btn_fullscreen-->
+          <div class="apb-tabbtn apb-tabbtn-state1">
+            <div class="apb-tabbtn-bar"></div>
+            <div class="apb-tabbtn-base apb-tabbtn-1">飞行分布</div>
+            <div class="apb-tabbtn-base apb-tabbtn-2">查询</div>
+            <div class="apb-tabbtn-base apb-tabbtn-3">鸟情日历</div>
+          </div>
+        </div>
+      </div>
+      <div class="apb-bottom">
+        <div class="apb-bottom-left">
+          <div class="apb-bottom-left-text">V1.02</div>
+        </div>
+        <div class="apb-bottom-center"></div>
+        <div class="apb-bottom-right">
+          <div class="apb-bottom-right-text">帮助
+            <div class="apb-help-tip">您可以通过鼠标滚轮或键盘上下方向键控制高度，或者直接点击右侧刻度对应的高度区域来切换。
+              <div class="apb-help-tip-arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_1" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/白鹭.jpg">
+            <div class="apb-bird-img-title">白鹭</div>
+            <div class="apb-bird-param">飞行高度：0 ~ 100M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-5">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长450~670mm。  全身白色。眼先粉红色。头后有2根冠羽，前颈下部有矛状饰羽。冬羽眼先红色，无蓑羽。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于池塘、湖泊、稻田。集群活动。以小型动物、昆虫为食。该鸟为夏候鸟，在本场主要以过境和集群危害飞行安全，夏季常见数量在320只左右。冬季偶见3~5只在此越冬。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">内场区猎杀及食物诱杀。外场区驱赶。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_2" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/牛背鹭.jpg">
+            <div class="apb-bird-img-title">牛背鹭</div>
+            <div class="apb-bird-param">飞行高度：0 ~ 100M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-5">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长500~520mm。头、颈、喉及背部中央的蓑羽橙黄色，身体余部白色。冬羽全身白色，背无蓑羽。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于稻田、沼泽。成对或小群活动。以水生动物、昆虫为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">内场区猎杀及食物诱杀。外场区驱赶。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_3" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/绿翅鸭.jpg">
+            <div class="apb-bird-img-title">绿翅鸭</div>
+            <div class="apb-bird-param">飞行高度：0 ~ 100M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-4">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长306~398mm。头至颈栗褐色；眼周暗绿色并延伸后头侧，外缘以淡色边缘。背灰色，有暗色细纹。翼镜翠绿色。胁灰色，下体余部白色。雌鸟全身暗褐色，羽缘淡色，具黑色贯眼纹。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于湖泊、河流、沿海。集大群活动。以农作物、水草为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">内场区猎杀、毒杀及水网捕杀。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_4" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/鹊鹞.jpg">
+            <div class="apb-bird-img-title">鹊鹞</div>
+            <div class="apb-bird-param">飞行高度：0 ~ 100M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-4">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长约400mm。上体以及喉、胸黑色，腹及尾下覆羽全为白色。雌鸟上体暗褐色，下体白色而杂以黑褐色纵纹。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于开阔旷野、河谷、沼泽、林缘草地及开垦耕地。以昆虫和小型动物为食。   </div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">网捕、笼捕、驱赶，可进行食物诱集驱赶。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_5" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/红脚隼.jpg">
+            <div class="apb-bird-img-title">红脚隼</div>
+            <div class="apb-bird-param">飞行高度：100 ~ 200M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长255~291mm。通体几乎全呈石板灰色，下体稍淡；尾下覆羽和覆腿羽棕红色。雌鸟上体似雄鸟色泽较淡渲染棕色；胸部布满黑褐色纵纹，至腹转为点斑；尾下覆羽和覆腿羽纯棕黄色。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖息于森林、草原、开阔丘陵平原和山麓一带。以昆虫、小型动物为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">食物诱集，笼捕、网捕和高空驱赶。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_6" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/燕隼.jpg">
+            <div class="apb-bird-img-title">燕隼</div>
+            <div class="apb-bird-param">飞行高度：100 ~ 200M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长295~310mm。上体暗灰色，杂以黑褐色羽干纹；颊、耳羽和髭[zī] 纹黑色；下体淡黄色，具黑褐纵纹；尾下覆羽和覆腿羽锈红色。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于开阔地附近的稀疏森林，防护林带。以昆虫、小型动物为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">食物诱集，笼捕、网捕和高空驱赶。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_7" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/红隼.jpg">
+            <div class="apb-bird-img-title">红隼</div>
+            <div class="apb-bird-param">飞行高度：100 ~ 200M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-5">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长310~370mm。头顶至后颈暗灰色。背及翅上覆羽砖红色，具黑褐色斑点，飞羽黑色。尾羽具宽的黑色次端斑，先端白色。下体皮黄色，胸、胁具黑褐色纵纹。雌鸟上体淡红棕色，杂以黑褐色纵斑；下体皮黄，斑纹较多。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于林缘开阔地。以鼠类为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">食物诱集，笼捕、网捕和高空驱赶。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_8" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/普通燕鸻.jpg">
+            <div class="apb-bird-img-title">普通燕鸻</div>
+            <div class="apb-bird-param">飞行高度：200 ~ 300M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-4">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">嘴黑色短宽，基部红色，脚深褐色；皮黄色的喉部自眼下至喉部四周成一黑环，上体灰褐色，翅外侧飞羽黑褐色，尾上覆羽白色；下体胸部淡褐色，下胸和两胁棕褐色余部白色。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">以小群至大群活动，性喧闹。与其他涉禽混群，栖于开阔地、沼泽地及稻田。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">控制内场区水体，灭杀水生生物，灭杀蚯蚓。进行猎杀、网捕、食物诱杀。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_9" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/环颈雉.jpg">
+            <div class="apb-bird-img-title">环颈雉</div>
+            <div class="apb-bird-param">飞行高度：200 ~ 300M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长500~860mm。雄鸟，上体以褐色为主，带金属光泽。头顶铜绿色，颈黑色具紫、绿光泽；颈下有完整的或不完整的白色颈环；背下羽色蓝灰；尾长，中央尾羽黄灰色，外侧尾羽棕色，均具多数黑色横带。雌鸟，羽色以褐为主，杂以黑斑。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于从山脚、丘陵直至海拔3000米以上的林缘、杂草丛生地带。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">灭杀蚂蚁切断食源，可进行猎杀、毒饵诱杀、网捕。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_10" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/鹌鹑.jpg">
+            <div class="apb-bird-img-title">鹌鹑</div>
+            <div class="apb-bird-param">飞行高度：200 ~ 300M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长150~200mm。上体以黑褐色为主，杂以浅黄色羽干纹。头顶、枕至后颈黑褐色，羽端深黄色，各羽具白色羽干纹；眉纹白色，耳羽栗褐色；胸栗黄色，杂以近白色羽干纹。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于近山平原、山脚至丘陵、低山地带。以植物芽、叶、果实及种子为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">灭杀蚂蚁切断食源，可进行猎杀、毒饵诱杀、网捕。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_11" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/骨顶鸡.jpg">
+            <div class="apb-bird-img-title">骨顶鸡</div>
+            <div class="apb-bird-param">飞行高度：200 ~ 300M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长400~430mm。全身黑色。嘴和额甲板白色，次级飞羽具白色羽端，飞行时可见飞羽色浅。脚灰色，各趾具瓣蹼。幼鸟浅褐色，与同龄黑水鸡相比无白色尾下覆羽。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于河流、湖沼附近地带。多结群活动。食物较杂，以植物嫩芽、叶及昆虫、小鱼、软体动物为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">猎杀，水网捕捉，毒饵诱杀，清理积水和水生植物。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_12" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/灰头麦鸡.jpg">
+            <div class="apb-bird-img-title">灰头麦鸡</div>
+            <div class="apb-bird-param">飞行高度：300 ~ 400M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-4">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全338~350mm。头及胸部灰色，胸下缘具黑色胸带；嘴黄色，嘴端黑，脚黄色；上体背部褐色；尾羽白色具黑色次端斑；下体白色。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于沼泽湿地、草原、农田。以昆虫、蠕虫为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">猎杀、网捕，灭杀蚯蚓，昆虫切断食源，并进行过境驱赶。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_13" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/凤头麦鸡.jpg">
+            <div class="apb-bird-img-title">凤头麦鸡</div>
+            <div class="apb-bird-param">飞行高度：300 ~ 400M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-4">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长290~340mm。雄鸟下羽额、头顶和枕黑褐色。头顶有黑色反曲的长形羽冠。眼先、眼上和眼后灰白色和白色，并混杂有白色斑纹。耳羽和颈侧白色，并混杂有黑斑。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖息于低山丘陵、山脚平原和草原地带的湖泊、水塘、沼泽、溪流和农田地带。以昆虫、软体动物、蠕虫等为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">控制内场区水体，灭杀水生生物，灭杀蚯蚓。进行猎杀、网捕、食物诱杀。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_14" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/金眶鸻.jpg">
+            <div class="apb-bird-img-title">金眶鸻</div>
+            <div class="apb-bird-param">飞行高度：300 ~ 400M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-4">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全150~170mm。上体沙褐色，下体白色。有明显的白色领圈，其下有明显的黑色领圈，眼后白斑向后延伸至头顶相连。 虹膜暗褐色，眼睑金黄色，脚和趾橙黄色。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于湖河岸边、海滨沙滩。以昆虫、蠕虫、甲壳类及蜘蛛等为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">猎杀、网捕，灭杀蚯蚓，昆虫切断食源，并进行过境驱赶。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_15" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/扇尾沙锥.jpg">
+            <div class="apb-bird-img-title">扇尾沙锥</div>
+            <div class="apb-bird-param">飞行高度：400 ~ 500M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-4">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长225~270mm。头顶黑褐色，具黑色羽干纹。头顶中央有一棕红色或淡皮黄色中央冠纹自额基至后枕。两侧各有一条白色或淡黄白色眉纹自嘴基至眼后。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于河湖岸边浅水和沼泽湿地、水田。以蠕虫、昆虫、蜘蛛、甲壳类、软体动物、小鱼、植物种子等为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">猎杀、网捕，灭杀蚯蚓，昆虫切断食源，并进行过境驱赶。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_16" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/丘鹬.jpg">
+            <div class="apb-bird-img-title">丘鹬</div>
+            <div class="apb-bird-param">飞行高度：400 ~ 500M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长320~340mm。嘴长且直，黄褐色，头部呈三角形，头顶后部及枕部具3~4块黑色横斑；上体棕黄色，具棕红色和黄灰色杂斑；下体栗黄色，有稠密的黑褐色细横纹。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于水域沼泽，但也活动于山区林间。以蠕虫、昆虫等为食，也吃植物性食物。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">猎杀、网捕，灭杀蚯蚓，昆虫切断食源，并进行过境驱赶。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_17" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/白腰草鹬.jpg">
+            <div class="apb-bird-img-title">白腰草鹬</div>
+            <div class="apb-bird-param">飞行高度：400 ~ 500M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长224~240mm。前额、头顶、后颈黑褐色，具白色纵纹；下背和腰黑褐色，微具白色羽缘，尾上覆羽白色。尾羽也是白色。除外侧一对尾羽全为白色外，其余尾羽具宽阔的黑褐色横斑。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于河湖岸边、水田和沼泽湿地。以昆虫、蜘蛛、蠕虫、软体动物、甲壳类、植物为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">猎杀、网捕，灭杀蚯蚓，昆虫切断食源，并进行过境驱赶。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_18" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/环颈鸻.jpg">
+            <div class="apb-bird-img-title">环颈鸻</div>
+            <div class="apb-bird-param">飞行高度：400 ~ 500M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-4">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长170~180mm。嘴细长，黑色；繁殖期头顶黑斑，棕红色枕部，黑色过眼纹；上体灰褐色，下体白色，脚黑色；雌鸟黑色部分均被褐色代替。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于河湖岸边及海滨。以昆虫、甲壳类、蠕虫及软体动物为食。   </div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">猎杀、网捕，灭杀蚯蚓，昆虫切断食源，并进行过境驱赶。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_19" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/山斑鸠.jpg">
+            <div class="apb-bird-img-title">山斑鸠</div>
+            <div class="apb-bird-param">飞行高度：500 ~ 600M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-4">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长310~350mm。虹膜金黄色，头、颈灰色，颈侧具黑白相间的块状斑；背上黑褐色，羽缘栗色，尾上覆羽黑褐色；下体在喉部，胸部粉棕色，尾下复羽灰蓝色。嘴灰褐色，脚暗紫红色。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于多树木地区或平原。以农作物种子以及杂草种子为食。 </div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">猎杀、毒饵诱杀，？毒灭杀。对集群过境的家鸽群用高空驱鸟弹驱赶。另在雏鸟出壳前进行猎射巢穴。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_20" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/大杜鹃.jpg">
+            <div class="apb-bird-img-title">大杜鹃</div>
+            <div class="apb-bird-param">飞行高度：500 ~ 600M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长300~335mm。嘴呈黑褐色，头顶、枕部及后颈呈暗银灰色，额部为浅灰褐色，尾羽黑色，杂以黑褐色的横纹。尾羽黑色，先端呈白色，羽轴两侧有白色斑点。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于开阔林地，尤喜近水树林间。以昆虫为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">对过境机场上的个体进行驱赶或猎杀，架“S”型网进行捕捉。整治机场及周边的灌木丛，低矮乔木。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_21" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/家鸽.jpg">
+            <div class="apb-bird-img-title">家鸽</div>
+            <div class="apb-bird-param">飞行高度：500 ~ 600M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-5">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长310~360mm。通体石板灰色，颈部胸部的羽毛具有悦目的金属光泽；翼上及尾端各自具一条黑色横纹，尾部的黑色横纹较宽，尾上覆羽白色。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">平时栖于近人家，大多在固定的地点。以杂草种子和农作物种子为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">猎杀、毒饵诱杀，病毒灭杀。对集群过境的家鸽群用高空驱鸟弹驱赶。另在雏鸟出壳前进行猎射巢穴。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_22" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/矶鹬.jpg">
+            <div class="apb-bird-img-title">矶鹬</div>
+            <div class="apb-bird-param">飞行高度：500 ~ 600M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长184~200mm。嘴短灰色，脚橄榄绿色；上体、尾羽橄榄绿具黑褐色横斑；下体羽白，在与翼交界的地方有一条白色的横斑。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于沼泽草地、稻田、池塘与水域边。以甲壳类、蠕虫、昆虫等为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">猎杀、网捕，灭杀蚯蚓，昆虫切断食源，并进行过境驱赶。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_23" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/云雀.jpg">
+            <div class="apb-bird-img-title">云雀</div>
+            <div class="apb-bird-param">飞行高度：600 ~ 700M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长175~185mm。嘴较短，眼周具浅色眉纹，颊部栗色，胸前具纵纹。尾深色，最外侧尾羽白色，飞行时翅、尾均具白边。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于草原及开阔农田地带，在具沙质土壤地区数量较多。杂食性但以植物种子为主食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">网捕、毒饵诱杀，越冬期夜间拉网捕捉。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_24" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/金腰燕.jpg">
+            <div class="apb-bird-img-title">金腰燕</div>
+            <div class="apb-bird-param">飞行高度：600 ~ 700M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-4">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长170~185mm。头顶、肩背部、尾羽蓝黑色，眉纹、眼后至后颈腰部栗黄色。下体羽棕白色，密布黑色羽干纹，尾下覆羽淡棕色。嘴和脚黑色。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于从平原至海拔1500m左右的山区村落及城市建筑物附近。在空中飞捕昆虫为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">灭杀机场内场草坪区的蚊、蝇等昆虫。在亚成鸟扩散期进行网捕，可有效控制灾害。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_25" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/家燕.jpg">
+            <div class="apb-bird-img-title">家燕</div>
+            <div class="apb-bird-param">飞行高度：600 ~ 700M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-5">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长160~180mm。上体黑色，具蓝色金属光泽；胸偏红而具一道蓝色胸带，腹白；尾甚长，近端处具白色点斑。与洋斑燕的区别在腹部为较纯净的白色，尾形长，并具蓝色胸带。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于自平原至低山的村落及城区内。在空中飞捕昆虫为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">灭杀机场内场草坪区的蚊、蝇等昆虫。在亚成鸟扩散期进行网捕，可有效控制灾害。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_26" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/短耳鸮.jpg">
+            <div class="apb-bird-img-title">短耳鸮</div>
+            <div class="apb-bird-param">飞行高度：600 ~ 700M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-4">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长360~400mm。身体黄褐色，耳羽簇短小在野外常不可见。眼为明亮的淡黄色，有深色“黑眼圈”，脸上亦有“x”型图案但不明显。胸腹棕黄色具深褐色纵纹。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于林缘、沼泽地、草甸草地。以昆虫、鼠类为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">灭杀鼠类、蛙类，网捕，探照灯驱赶。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_27" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/纵纹腹小鸮.jpg">
+            <div class="apb-bird-img-title">纵纹腹小鸮</div>
+            <div class="apb-bird-param">飞行高度：600 ~ 700M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长220~238mm。小型鸮，面盘不明显，无耳羽簇。眼大，亮黄色，胸腹白色具褐色纵纹，背红褐具白色纵纹及点状斑。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于丘陵荒坡或村庄附近的树林间。以昆虫、鼠类为食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">灭杀鼠类、蛙类，网捕，探照灯驱赶。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_28" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/戴胜.jpg">
+            <div class="apb-bird-img-title">戴胜</div>
+            <div class="apb-bird-param">飞行高度：700 ~ 800M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长约240mm。头、颈、胸淡棕栗色。羽冠色略深且各羽具黑端，在后面的羽黑端前更具白斑。虹膜褐至红褐色;嘴黑色，基部呈淡铅紫色。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于开阔的园地和郊野间的树木上。以昆虫为主食，兼食蚯蚓、蜘蛛、螺类等。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">灭杀蚯蚓等地栖害虫，网捕、猎杀。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_29" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/田鹨.jpg">
+            <div class="apb-bird-img-title">田鹨</div>
+            <div class="apb-bird-param">飞行高度：700 ~ 800M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-5">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长165~186mm。上体棕褐色，具黑褐色纵纹，眉纹和颊纹淡黄色；尾羽黑褐色，最外侧尾羽全白；下体颏、喉部乳黄色，胸部、两胁淡褐色，胸具黑褐色纵纹，脚黄褐色，后爪长，十分突出。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于近河川附近的开阔地。以昆虫为主食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">网捕、夜间拉网捕捉、毒饵诱杀、驱赶，非飞行阶段可进行拉网捕捉效果好。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_30" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/红尾伯劳.jpg">
+            <div class="apb-bird-img-title">红尾伯劳</div>
+            <div class="apb-bird-param">飞行高度：700 ~ 800M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长185~200mm。淡褐色伯劳；嘴、脚黑色，额、头顶灰色或棕红色，颏、喉白色；雄鸟具粗黑色贯眼纹从嘴基部至耳后，尾上覆羽棕红色；雌鸟比雄鸟羽色暗淡，亚成鸟嘴基部黄色。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于平原至低山、丘陵的次生阔叶林内。以昆虫为主食。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">灭杀两栖类及蝗虫，切断食源，繁殖期猎杀网捕。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_31" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/八哥.jpg">
+            <div class="apb-bird-img-title">八哥</div>
+            <div class="apb-bird-param">飞行高度：700 ~ 800M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长240~250mm。全身黑色，眼黄褐色，嘴乳黄色，脚黄色，额部有一团羽冠，两翅各一白斑，尾羽末端白色，尾下复羽具一白色羽端，形成黑白相间的条纹。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于平原至丘陵的阔叶林及竹林附近。杂食性。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">控制垃圾，诱杀，在主要活动区域架网捕捉，繁殖盛期捣窝毁卵。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_32" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/小鹀.jpg">
+            <div class="apb-bird-img-title">小鹀</div>
+            <div class="apb-bird-param">飞行高度：800 ~ 900M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长约130mm。喙为圆锥形，体羽似麻雀，外侧尾羽有较多的白色。下体偏白，胸及两胁具黑色纵纹。雌鸟及雄鸟冬羽羽色较淡，无黑色头侧线。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于坝区的山麓灌丛、草坡。主食谷粒、草籽，兼食昆虫。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">在场内外排水沟及有苇草的地段，每1.5~2m设低网捕捉，在冬季毒饵诱杀，猎杀驱赶，控制集群等。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_33" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/麻雀.jpg">
+            <div class="apb-bird-img-title">麻雀</div>
+            <div class="apb-bird-param">飞行高度：800 ~ 900M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-4">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长约140mm。额、头顶和后颈栗褐色，上体褐色，杂有黑色粗纵纹，腰和尾上覆羽黄褐色。耳羽后具黑色斑块，下体胸腹部灰白色。嘴黑色，脚肉褐色。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">平时栖于近人家，大多在固定的地点。以各种农作物为食，全年约占一半，其余一半为杂草种子、野生植物和昆虫。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">投放绝育剂控制种群数量，冬季毒饵灭杀，繁殖高峰期捣巢取卵。亚成鸟期网捕。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_34" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/三道眉草鹀.jpg">
+            <div class="apb-bird-img-title">三道眉草鹀</div>
+            <div class="apb-bird-param">飞行高度：800 ~ 900M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长约165mm。雄鸟头顶至后颈栗色具深色细纵纹，侧冠纹、贯眼纹、鬓纹黑色，上体棕红色具黑褐色纵纹，尾羽黑褐色外侧具白斑，雌鸟似雄鸟，体色稍淡，眼后大面积区域棕黄色。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于山麓平原地区。食物为作物、杂草种子、昆虫等。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">在场内外排水沟及有苇草的地段，每1.5~2m设低网捕捉，在冬季毒饵诱杀，猎杀驱赶，控制集群等。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_35" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/灰头鹀.jpg">
+            <div class="apb-bird-img-title">灰头鹀</div>
+            <div class="apb-bird-param">飞行高度：900 ~ 1000M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长约140mm。雄鸟的头、颈背及喉灰，眼先及颏黑；上体余部浓栗色而具明显的黑色纵纹；雌鸟及冬季雄鸟头橄榄色，过眼纹及耳覆羽下的月牙形斑纹黄色。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于平原以至高山（海拔3000m）的灌木丛间，也见于公园的矮林、杨柳树上，在篱笆、电线杆或电线上都有踪迹。杂食性，以植物为主，多为杂草种子，也啄食昆虫。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">在场内外排水沟及有苇草的地段，每1.5~2m设低网捕捉，在冬季毒饵诱杀，猎杀驱赶，控制集群等。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_36" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/黄胸鹀.jpg">
+            <div class="apb-bird-img-title">黄胸鹀</div>
+            <div class="apb-bird-param">飞行高度：900 ~ 1000M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长约140mm。雄鸟头顶至后颈、背部栗红色，下体在胸部具有完整的栗色横斑与后颈部相连；雌鸟头部少黑色，具黄色眉纹，翅上无大白斑，余部似雄鸟。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于农田区。繁殖期以动物性食物为主，包括昆虫。迁徙及越冬时期，则以植物性食物为主，多吃稻子、麦子、谷子、高粱等。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">在场内外排水沟及有苇草的地段，每1.5~2m设低网捕捉，在冬季毒饵诱杀，猎杀驱赶，控制集群等。</div>
+        </div>
+      </div>
+    </div>
+    <div id="apb_popup_37" class="apb-popup">
+      <div class="abp-popup-bg"></div>
+      <div class="apb-popup-box">
+        <div class="apb-popup-left with-clearfix">
+          <div class="apb-bird-img"><img src="images/birdimg/苇鹀.jpg">
+            <div class="apb-bird-img-title">苇鹀</div>
+            <div class="apb-bird-param">飞行高度：900 ~ 1000M</div>
+            <div class="apb-bird-param">
+               
+              危害等级：
+              <div class="apb-stars apb-stars-3">
+                <div class="apb-stars-sel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apb-popup-right with-clearfix">
+          <div class="apb-popup-right-title">形态特征</div>
+          <div class="apb-popup-right-content">全长约140mm。白色的下髭纹与黑色的头及喉成对比，颈圈白而下体灰，上体具灰色及黑色的横斑。上体几乎无褐色或棕色，小覆羽蓝灰而非棕色和白色，翼斑多显。</div>
+          <div class="apb-popup-right-title">生态特征</div>
+          <div class="apb-popup-right-content">栖于低山丘陵和山脚平原地区的农田、草地、溪流沿岸、芦苇沼泽等。主要以草籽、植物幼芽为食，偶也吃昆虫。</div>
+          <div class="apb-popup-right-title">灭杀方法</div>
+          <div class="apb-popup-right-content">在场内外排水沟及有苇草的地段，每1.5~2m设低网捕捉，在冬季毒饵诱杀，猎杀驱赶，控制集群等。</div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

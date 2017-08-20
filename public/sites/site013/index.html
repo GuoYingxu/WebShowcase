@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="hisense">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Hisense</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript">
+      function browserRedirect() { 
+      	var sUserAgent= navigator.userAgent.toLowerCase(); 
+      	var bIsIpad= sUserAgent.match(/ipad/i) == "ipad"; 
+      	var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os"; 
+      	var bIsMidp= sUserAgent.match(/midp/i) == "midp"; 
+      	var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4"; 
+      	var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb"; 
+      	var bIsAndroid= sUserAgent.match(/android/i) == "android"; 
+      	var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce"; 
+      	var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile"; 
+      	if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) { 
+      		window.location.href= 'index_m.html'; 
+      	}
+      } 
+      browserRedirect();
+    </script>
+  </head>
+  <body>
+    <!--微信分享链接所带图片-->
+    <div id="wx_pic"><img src="images/wx_pic.jpg"></div>
+    <div class="hi-top"><span>
+         
+        欢迎您，请&nbsp;<a href="http://my.staging.video-tx.com/login.php">登录</a></span>
+      <div class="dv-line"></div><span><a href="http://my.staging.video-tx.com/trial/trial.html">注册</a></span>
+      <div class="dv-line"></div><span id="btn_tiyanqu"><a href="javascript:;">体验区</a></span>
+      <div class="top-tip"><span>免费体验</span><span id="top_tip" style="display:none">，请先注册，即可进入体验区</span>
+        <div class="top-tip-arrow"></div>
+      </div>
+      <div class="pull-right">
+        <div class="top-icon ticon-1 has-text">
+          <div class="top-icon-text">400-079-0126</div>
+        </div>
+        <div class="top-icon ticon-4 has-text">
+          <div class="top-icon-text">1839116809@qq.com</div>
+        </div>
+        <div class="top-icon ticon-2 has-text">
+          <div class="top-icon-text">1839116809</div>
+        </div>
+        <div class="top-icon ticon-3 has-qrcode">
+          <div class="qrcode-arrow"></div>
+          <div class="qrcode-box"><img src="images/qrcode.png"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hi-nav">
+      <div class="hi-logo"></div>
+      <div class="hi-nav-btn-container">
+        <div class="hi-nav-btn active">产品与服务</div>
+        <div class="hi-nav-btn">功能介绍</div>
+        <div class="hi-nav-btn">合作客户</div>
+        <div class="hi-nav-btn">关于我们</div>
+      </div><a href="javascript:;" class="hi-tiyan-btn">体验试用</a>
+    </div>
+    <div class="hi-container">
+      <div class="hi-item page-1 full-height">
+        <div class="slider-item outstage">
+          <div id="sbg_1" class="slider-bg full-img"><img src="images/slider_1_bg.jpg"></div>
+          <div class="slider-1-text full-img"><img src="images/hi-slider-1-text.png"></div>
+          <div class="slider-1-cloud full-img"><img src="images/hi-slider-1-cloud.png"></div>
+          <div class="slider-1-rotate full-img"><img src="images/hi-slider-1-rotate.png"></div>
+        </div>
+        <div class="slider-item outstage">
+          <div id="sbg_2" class="slider-bg full-img"><img src="images/slider_2_bg.jpg"></div>
+          <div class="slider-2-tv full-img"><img src="images/hi-slider-2-tv.png"></div>
+          <div class="slider-2-text full-img"><img src="images/hi-slider-2-text.png"></div>
+        </div>
+        <div class="slider-item outstage">
+          <div id="sbg_3" class="slider-bg full-img"><img src="images/slider_3_bg.jpg"></div>
+          <div class="slider-3-mobile full-img"><img src="images/hi-slider-3-mobile.png"></div>
+          <div class="slider-3-pad full-img"><img src="images/hi-slider-3-pad.png"></div>
+          <div class="slider-3-tv full-img"><img src="images/hi-slider-3-tv.png"></div>
+          <!--.slider-3-laptop.full-img//img(src="images/hi-slider-3-laptop.png")
+          -->
+          <div class="slider-3-text full-img"><img src="images/hi-slider-3-text.png"></div>
+        </div>
+        <div class="slider-item outstage">
+          <div id="sbg_4" class="slider-bg full-img"><img src="images/slider_4_bg.jpg"></div>
+          <div class="slider-4-building"><img src="images/hi-slider-4-building.png"></div>
+          <div class="slider-4-text full-img"><img src="images/hi-slider-4-text.png"></div>
+        </div>
+        <ul class="slider-bullet-container"></ul>
+      </div>
+      <div class="hi-item page-2 full-height">
+        <div class="page-2-content">
+          <div class="page-title">
+            <div class="page-title-cn">功能介绍</div>
+            <div class="page-title-en">Function Introduction</div>
+          </div>
+          <div class="page-2-item"><img src="images/hi-page2-icon-1.png">
+            <div class="page-2-item-title">一云多屏<br>无界观看</div>
+          </div>
+          <div class="page-2-item"><img src="images/hi-page2-icon-2.png">
+            <div class="page-2-item-title">一站式SAAS<br>轻松进入云世界</div>
+          </div>
+          <div class="page-2-item"><img src="images/hi-page2-icon-3.png">
+            <div class="page-2-item-title">高并发访问<br>享受流畅视听体验</div>
+          </div>
+          <div class="page-2-item"><img src="images/hi-page2-icon-4.png">
+            <div class="page-2-item-title">智能云转码<br>让转码不再愁</div>
+          </div>
+          <div class="page-2-item"><img src="images/hi-page2-icon-5.png">
+            <div class="page-2-item-title">微信分享<br>让您的信息瞬间传达到<br>地球的任何一个角落</div>
+          </div>
+          <div class="page-2-item"><img src="images/hi-page2-icon-6.png">
+            <div class="page-2-item-title">自定义视频广告<br>完全私人定制</div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="page-2-item"><img src="images/hi-page2-icon-7.png">
+            <div class="page-2-item-title">统计分析<br>商机运营好帮手</div>
+          </div>
+          <div class="page-2-item"><img src="images/hi-page2-icon-8.png">
+            <div class="page-2-item-title">在线编辑<br>简单快捷</div>
+          </div>
+          <div class="page-2-item"><img src="images/hi-page2-icon-9.png">
+            <div class="page-2-item-title">自定义播放器LOGO<br>从此买入高大上</div>
+          </div>
+          <div class="page-2-item"><img src="images/hi-page2-icon-10.png">
+            <div class="page-2-item-title">超多标准API<br>灵活扩展</div>
+          </div>
+          <div class="page-2-item"><img src="images/hi-page2-icon-11.png">
+            <div class="page-2-item-title">在线字幕制作<br>想改就改<br>给自己更多机会</div>
+          </div>
+          <div class="page-2-item"><img src="images/hi-page2-icon-12.png">
+            <div class="page-2-item-title">在线媒资<br>随时随地轻松管理</div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="page-2-text">
+            为互联网视频云平台提供解决方案：<br>
+            为企业用户提供最优的视频云平台支持，服务涉及广电、媒体、教育、旅游、电商、游戏、娱乐等行业，让视频在互联网终端轻松启动，完成从Web到iOS、Android的跨媒体传播。
+          </div>
+        </div>
+      </div>
+      <div class="hi-item page-3 full-height">
+        <div class="page-3-content">
+          <div class="page-title">
+            <div class="page-title-cn">合作客户</div>
+            <div class="page-title-en">Our Clients</div>
+          </div><a href="javascript:;" class="page-3-item"><img src="images/hi-client-1.png"></a><a href="javascript:;" class="page-3-item"><img src="images/hi-client-2.png"></a><a href="javascript:;" class="page-3-item"><img src="images/hi-client-3.png"></a><a href="javascript:;" class="page-3-item"><img src="images/hi-client-4.png"></a><a href="javascript:;" class="page-3-item page-3-item-small"><img src="images/hi-client-5.png"></a>
+          <div class="clearfix"></div><a href="javascript:;" class="page-3-item"><img src="images/hi-client-6.png"></a><a href="javascript:;" class="page-3-item"><img src="images/hi-client-7.png"></a><a href="javascript:;" class="page-3-item"><img src="images/hi-client-8.png"></a><a href="javascript:;" class="page-3-item"><img src="images/hi-client-9.png"></a><a href="javascript:;" class="page-3-item page-3-item-small"><img src="images/hi-client-10.png"></a>
+          <div class="clearfix"></div><a href="javascript:;" class="page-3-item"><img src="images/hi-client-11.png"></a><a href="javascript:;" class="page-3-item"><img src="images/hi-client-12.png"></a><a href="javascript:;" class="page-3-item"><img src="images/hi-client-13.png"></a><a href="javascript:;" class="page-3-item"><img src="images/hi-client-14.png"></a><a href="javascript:;" class="page-3-item page-3-item-small"><img src="images/hi-client-15.png"></a>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="hi-item page-4">
+        <div class="page-4-container">
+          <div class="row-container">
+            <div class="row-content">
+              <div class="col-content">
+                <div class="page-4-title">
+                  <div class="page-4-title-1">海信传媒网络，生于智能时代</div>
+                  <div class="page-4-title-2">为互联网视频云平台提供解决方案</div>
+                  <div class="page-4-title-line"></div>
+                </div>
+                <div class="page-4-text">
+                  <p>
+                    青岛海信传媒网络技术有限公司作为全球领先的高科技公司，一直致力于智能产业系
+                    统平台以及移动互联网智能应用相关领域的技术研发。于2012年11月在亚
+                    洲、北美、欧洲和非洲等市场成功研发并投放VIDDA系统平台，为2000多
+                    万电视、平板、手机等各种智能终端用户提供支持和服务。智能应用涉及:
+                    应用商店、视频聚合、游戏平台、教育平台、支付平台等不同的领域。
+                  </p>
+                  <p>
+                    海信传媒网络在国内外用于大量核心专利技术，在智能系统平台实现云端同时
+                    驱动多终端的视频和应用并发，使视频和应用可以畅通无阻的在各种终端设
+                    备上运行。相关的专利技术还有：包括3D等编码流自适应的流媒体技术，远
+                    程高清直播（DistanceHDTV）和实时转码并发等功能，并支持一源多屏的视
+                    频传输，成就了可扩展的智能视频云平台。
+                  </p>
+                  <p>
+                    团队2012年被慧聪评为广电十大新锐企业，被创业邦评为年度创新成长企业100
+                    强，成为国内外业界广泛认可的视频云技术服务商。2013年更推出了3D视频
+                    云解决方案，超高清云解决方案和云播放器等各种应用和技术服务。2013年
+                    1月4日，新闻出版广电总局1号文件传达之际，海信传媒网络已经为上海文
+                    广、CNTV移动终端等各级广电机构服务超过18个月。
+                  </p>
+                  <p>
+                    与阿里云携手合作，通过部署在阿里云计算上的视频云服务针对云计算开发者、
+                    中国的创新企业提供视频技术支持。
+                  </p>
+                  <p>
+                    海信传媒网络的在线视频平台服务是从音视频内容的自动上传、转码、分发、存
+                    储、缓存、传输，到CDN加速的视频传播完整解决方案。经典客户包括国旅、
+                    奥美公司等上百家知名企业。客户不需要配备专业视频技术人员，即租即用，
+                    随时升级自己的网站成为视频平台，提高产品服务的客户体验。
+                  </p>
+                </div>
+              </div>
+              <div class="col-content">
+                <div class="col-1of5">
+                  <div class="page-4-item clearfix"><img src="images/hi-page4-icon-1.png">
+                    <div class="page-4-item-arrow"></div>
+                    <div class="page-4-item-mask left">
+                      <div class="page-4-item-text">通过互联网平台为智能电视、机顶盒等其他终端用户提供流畅的高清直播。</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1of5">
+                  <div class="page-4-item clearfix"><img src="images/hi-page4-icon-2.png">
+                    <div class="page-4-item-arrow"></div>
+                    <div class="page-4-item-mask"> 
+                      <div class="page-4-item-text">
+                        为终端用户提供方便快捷的视频内容聚合、搜索、观看以及管理。
+                        同时实现共享、分享、定点分发等需求。
+                        各种应用在不同的时间、地点和终端实现支付、下载和运营。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1of5">
+                  <div class="page-4-item clearfix"><img src="images/hi-page4-icon-3.png">
+                    <div class="page-4-item-arrow"></div>
+                    <div class="page-4-item-mask"> 
+                      <div class="page-4-item-text">互联网无疆界的特性要求系统具有良好的扩展性（包含业务层面和用户规模层面）以及广泛的兼容性。</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1of5">
+                  <div class="page-4-item clearfix"><img src="images/hi-page4-icon-4.png">
+                    <div class="page-4-item-arrow"></div>
+                    <div class="page-4-item-mask"> 
+                      <div class="page-4-item-text">
+                        满足用户对系统内容得多元化需求，如：<br>
+                        A.互联网体验电视级高清<br>
+                        在已实现的双向改造的有线网络实现全新的OTT视频服务架构；服务器端驱动的码流自适应技术保证清晰流畅的高清视频体验。<br>
+                        B.内容汇聚简单，覆盖多屏<br>
+                        基于IP的视频源汇聚和转码技术，帮助用户轻松实现海量源内容汇聚；单一系统同时支持STB/PC/PAD/智能手机，简化网络架构与运营难度；无需客户端及二次开发，系统即刻上线，大大降低运营成本。<br>
+                        C.智能业务（视频等应用）实现全球部署<br>
+                        支持点播、直播、时移、虚拟频道等业务，提高客户体验的同时大大增加用户黏性；独特的DistanceHDTV技术实现互联网高清电视全球覆盖。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1of5">
+                  <div class="page-4-item clearfix"><img src="images/hi-page4-icon-5.png">
+                    <div class="page-4-item-arrow"></div>
+                    <div class="page-4-item-mask right">
+                      <div class="page-4-item-text">
+                        运营级别服务平台：
+                        A.系统可靠性高，部署简单，扩容方便；
+                        B.与集成播控平台轻松对接，不影响原有系统运营；
+                        C.开放API，支持DRM，CMS和BOSS等第三方系统无缝对接；
+                        D.提供完备的应用运营数据、收视率数据、广告数据和系统监控日志。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hi-footer">
+          <div class="hi-footer-title"></div>
+          <div class="row-container">
+            <div class="hi-footer-line"></div>
+          </div>
+          <div class="hi-footer-links"><a href="http://cloud.hisense.com/" target="_blank">公司首页</a>
+            <div class="footer-dvline"></div><a href="http://www.hisense.com/" target="_blank">海信集团</a>
+          </div>
+          <div class="hi-footer-links">Copyright ©2015 Hisense Media Network Technology Co.,Ltd. All Rights Reserved.</div>
+          <div class="hi-footer-links">青岛海信网络传媒技术有限公司版权所有</div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="hi-pager">
+      <div class="hi-pager-selector"></div>
+    </div>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.color-2.1.2.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

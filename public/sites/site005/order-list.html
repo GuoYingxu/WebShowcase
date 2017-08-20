@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="hisense">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>微订单</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="topbar">
+        <div class="col-container">
+          <div class="col col-3of5">
+            <div class="col-content">
+              <div class="search-box">
+                <div class="search-icon"><i class="fa fa-search"></i></div>
+                <input type="search">
+              </div>
+            </div>
+          </div>
+          <div class="col col-2of5">
+            <div class="col-content">
+              <div data-toggle="popbox" data-target="#topbar_select" class="bx-btn touch-active font-white border-capsule"><span id="top_select_title">热菜</span>&nbsp;<i class="fa fa-angle-down"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="topbar_select" class="topbar-select popbox-content space-16">
+        <div class="topbar-select-arrow"></div>
+        <div class="col-container">
+          <div class="col-divider"></div>
+          <div class="col col-1of2">
+            <div class="col-content">
+              <div class="topbar-select-btn-all touch-active">全部菜品</div>
+            </div>
+          </div>
+          <div class="col col-1of2">
+            <div class="col-content">
+              <div class="topbar-select-btn touch-active">套餐</div>
+            </div>
+          </div>
+          <div class="col col-1of2">
+            <div class="col-content">
+              <div class="topbar-select-btn touch-active">热菜</div>
+            </div>
+          </div>
+          <div class="col col-1of2">
+            <div class="col-content">
+              <div class="topbar-select-btn touch-active">凉菜</div>
+            </div>
+          </div>
+          <div class="col col-1of2">
+            <div class="col-content">
+              <div class="topbar-select-btn touch-active">主食</div>
+            </div>
+          </div>
+          <div class="col col-1of2">
+            <div class="col-content">
+              <div class="topbar-select-btn touch-active">小吃</div>
+            </div>
+          </div>
+          <div class="col col-1of2">
+            <div class="col-content">
+              <div class="topbar-select-btn touch-active">饮品</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="topbar-space"></div>
+      <div class="info-list">
+        <div class="info-list-title">套餐</div>
+        <div class="col-container info-list-item">
+          <div class="col-divider"></div>
+          <div class="col col-1of4 col-hp-1of1">
+            <div class="col-content">
+              <div class="info-icon"><i class="fa fa-heart"></i></div><img src="images/list-img-02.png">
+            </div>
+          </div>
+          <div class="col col-3of4">
+            <div class="col-content">
+              <div class="info-box"><a href="detail.html" class="info-arrow touch-active"><i class="fa fa-angle-right"></i></a>
+                <div class="info-title">双人套餐</div>
+                <div class="info-stars">
+                  <div class="info-stars-layer"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+                  <!--通过style的宽度百分比来显示星级数，每10%对应半颗星-->
+                  <div style="width:90%" class="info-stars-cover">
+                    <div class="info-stars-layer"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="info-text">双人牛排套餐，包含一份菲力牛排和一份T骨牛排，还有餐前饮料喝沙拉哦</div>
+              </div>
+              <div class="info-cost">
+                <div class="info-currency-icon">￥</div>
+                <div class="info-money">158</div>
+                <div class="info-money-old">￥258</div>
+                <div class="pull-right num-selector">
+                  <div class="btn-minus touch-active"><i class="fa fa-minus-circle"></i></div>
+                  <div class="num-input">1</div>
+                  <input type="number" value="0" class="num-input-value">
+                  <div class="btn-plus touch-active"><i class="fa fa-plus-circle"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-container info-list-item has-icon">
+          <div class="col-divider"></div>
+          <div class="col col-1of4 col-hp-1of1">
+            <div class="col-content">
+              <div class="info-icon"><i class="fa fa-heart"></i></div><img src="images/list-img-01.png">
+            </div>
+          </div>
+          <div class="col col-3of4">
+            <div class="col-content">
+              <div class="info-box">
+                <div class="info-title">套餐</div>
+                <div class="info-stars">
+                  <div class="info-stars-layer"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+                  <!--通过style的宽度百分比来显示星级数，每10%对应半颗星-->
+                  <div style="width:80%" class="info-stars-cover">
+                    <div class="info-stars-layer"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="info-text">制作时间：30分钟<br>主要材料：精选肋排，当季新蒜</div>
+              </div>
+              <div class="info-cost">
+                <div class="info-currency-icon">￥</div>
+                <div class="info-money">42.8</div>
+                <div class="info-money-old">￥62</div>
+                <div class="pull-right num-selector">
+                  <div class="btn-minus touch-active"><i class="fa fa-minus-circle"></i></div>
+                  <div class="num-input">0</div>
+                  <input type="number" value="0" class="num-input-value">
+                  <div class="btn-plus touch-active"><i class="fa fa-plus-circle"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-list">
+        <div class="info-list-title">热菜</div>
+        <div class="col-container info-list-item has-icon">
+          <div class="col-divider"></div>
+          <div class="col col-1of4 col-hp-1of1">
+            <div class="col-content">
+              <div class="info-icon"><i class="fa fa-heart"></i></div><img src="images/list-img-01.png">
+            </div>
+          </div>
+          <div class="col col-3of4">
+            <div class="col-content">
+              <div class="info-box">
+                <div class="info-title">蒜香烤肋排</div>
+                <div class="info-stars">
+                  <div class="info-stars-layer"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+                  <!--通过style的宽度百分比来显示星级数，每10%对应半颗星-->
+                  <div style="width:80%" class="info-stars-cover">
+                    <div class="info-stars-layer"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="info-text">制作时间：30分钟<br>主要材料：精选肋排，当季新蒜</div>
+              </div>
+              <div class="info-cost">
+                <div class="info-currency-icon">￥</div>
+                <div class="info-money">42.8</div>
+                <div class="info-money-old">￥62</div>
+                <div class="pull-right num-selector">
+                  <div class="btn-minus touch-active"><i class="fa fa-minus-circle"></i></div>
+                  <div class="num-input">0</div>
+                  <input type="number" value="0" class="num-input-value">
+                  <div class="btn-plus touch-active"><i class="fa fa-plus-circle"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-container info-list-item">
+          <div class="col-divider"></div>
+          <div class="col col-1of4 col-hp-1of1">
+            <div class="col-content">
+              <div class="info-icon"><i class="fa fa-heart"></i></div><img src="images/list-img-03.png">
+            </div>
+          </div>
+          <div class="col col-3of4">
+            <div class="col-content">
+              <div class="info-box">
+                <div class="info-title">椒盐烤翅</div>
+                <div class="info-stars">
+                  <div class="info-stars-layer"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+                  <!--通过style的宽度百分比来显示星级数，每10%对应半颗星-->
+                  <div style="width:90%" class="info-stars-cover">
+                    <div class="info-stars-layer"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="info-text">选用屠宰时间一周内优质鸡中翅，精选优质洋葱、辣椒、大蒜调制香辛料</div>
+              </div>
+              <div class="info-cost">
+                <div class="info-currency-icon">￥</div>
+                <div class="info-money">52.8</div>
+                <div class="info-money-old">￥89</div>
+                <div class="pull-right num-selector">
+                  <div class="btn-minus touch-active"><i class="fa fa-minus-circle"></i></div>
+                  <div class="num-input">0</div>
+                  <input type="number" value="0" class="num-input-value">
+                  <div class="btn-plus touch-active"><i class="fa fa-plus-circle"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-container info-list-item has-icon">
+          <div class="col-divider"></div>
+          <div class="col col-1of4 col-hp-1of1">
+            <div class="col-content">
+              <div class="info-icon"><i class="fa fa-heart"></i></div><img src="images/list-img-01.png">
+            </div>
+          </div>
+          <div class="col col-3of4">
+            <div class="col-content">
+              <div class="info-box">
+                <div class="info-title">蒜香烤肋排</div>
+                <div class="info-stars">
+                  <div class="info-stars-layer"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+                  <!--通过style的宽度百分比来显示星级数，每10%对应半颗星-->
+                  <div style="width:80%" class="info-stars-cover">
+                    <div class="info-stars-layer"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="info-text">制作时间：30分钟<br>主要材料：精选肋排，当季新蒜</div>
+              </div>
+              <div class="info-cost">
+                <div class="info-currency-icon">￥</div>
+                <div class="info-money">42.8</div>
+                <div class="pull-right num-selector">
+                  <div class="btn-minus touch-active"><i class="fa fa-minus-circle"></i></div>
+                  <div class="num-input">0</div>
+                  <input type="number" value="0" class="num-input-value">
+                  <div class="btn-plus touch-active"><i class="fa fa-plus-circle"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-container info-list-item">
+          <div class="col-divider"></div>
+          <div class="col col-1of4 col-hp-1of1">
+            <div class="col-content">
+              <div class="info-icon"><i class="fa fa-heart"></i></div><img src="images/list-img-02.png">
+            </div>
+          </div>
+          <div class="col col-3of4">
+            <div class="col-content">
+              <div class="info-box">
+                <div class="info-title">清蒸山药</div>
+                <div class="info-stars">
+                  <div class="info-stars-layer"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+                  <!--通过style的宽度百分比来显示星级数，每10%对应半颗星-->
+                  <div style="width:90%" class="info-stars-cover">
+                    <div class="info-stars-layer"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="info-text">主料：山药<br>辅料：白糖 黑木耳<br>做法：1.棍山药，枸杞2.戴手套，处理山药，去皮，再切半厘米厚的段3.用筷子在山药片上扎个洞，山药很脆，刀子出洞就会断开了</div>
+              </div>
+              <div class="info-cost">
+                <div class="info-currency-icon">￥</div>
+                <div class="info-money">42.8</div>
+                <div class="pull-right num-selector">
+                  <div class="btn-minus touch-active"><i class="fa fa-minus-circle"></i></div>
+                  <div class="num-input">0</div>
+                  <input type="number" value="0" class="num-input-value">
+                  <div class="btn-plus touch-active"><i class="fa fa-plus-circle"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-container info-list-item">
+          <div class="col-divider"></div>
+          <div class="col col-1of4 col-hp-1of1">
+            <div class="col-content">
+              <div class="info-icon"><i class="fa fa-heart"></i></div><img src="images/list-img-03.png">
+            </div>
+          </div>
+          <div class="col col-3of4">
+            <div class="col-content">
+              <div class="info-box">
+                <div class="info-title">椒盐烤翅</div>
+                <div class="info-stars">
+                  <div class="info-stars-layer"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+                  <!--通过style的宽度百分比来显示星级数，每10%对应半颗星-->
+                  <div style="width:90%" class="info-stars-cover">
+                    <div class="info-stars-layer"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="info-text">选用屠宰时间一周内优质鸡中翅，精选优质洋葱、辣椒、大蒜调制香辛料</div>
+              </div>
+              <div class="info-cost">
+                <div class="info-currency-icon">￥</div>
+                <div class="info-money">42.8</div>
+                <div class="pull-right num-selector">
+                  <div class="btn-minus touch-active"><i class="fa fa-minus-circle"></i></div>
+                  <div class="num-input">1</div>
+                  <input type="number" value="1" class="num-input-value">
+                  <div class="btn-plus touch-active"><i class="fa fa-plus-circle"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-list">
+        <div class="info-list-title">凉菜</div>
+        <div class="col-container info-list-item has-icon">
+          <div class="col-divider"></div>
+          <div class="col col-1of4 col-hp-1of1">
+            <div class="col-content">
+              <div class="info-icon"><i class="fa fa-heart"></i></div><img src="images/list-img-01.png">
+            </div>
+          </div>
+          <div class="col col-3of4">
+            <div class="col-content">
+              <div class="info-box">
+                <div class="info-title">凉菜</div>
+                <div class="info-stars">
+                  <div class="info-stars-layer"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+                  <!--通过style的宽度百分比来显示星级数，每10%对应半颗星-->
+                  <div style="width:80%" class="info-stars-cover">
+                    <div class="info-stars-layer"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="info-text">制作时间：30分钟<br>主要材料：精选肋排，当季新蒜</div>
+              </div>
+              <div class="info-cost">
+                <div class="info-currency-icon">￥</div>
+                <div class="info-money">42.8</div>
+                <div class="info-money-old">￥62</div>
+                <div class="pull-right num-selector">
+                  <div class="btn-minus touch-active"><i class="fa fa-minus-circle"></i></div>
+                  <div class="num-input">0</div>
+                  <input type="number" value="0" class="num-input-value">
+                  <div class="btn-plus touch-active"><i class="fa fa-plus-circle"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-list">
+        <div class="info-list-title">主食</div>
+        <div class="col-container info-list-item has-icon">
+          <div class="col-divider"></div>
+          <div class="col col-1of4 col-hp-1of1">
+            <div class="col-content">
+              <div class="info-icon"><i class="fa fa-heart"></i></div><img src="images/list-img-01.png">
+            </div>
+          </div>
+          <div class="col col-3of4">
+            <div class="col-content">
+              <div class="info-box">
+                <div class="info-title">主食</div>
+                <div class="info-stars">
+                  <div class="info-stars-layer"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+                  <!--通过style的宽度百分比来显示星级数，每10%对应半颗星-->
+                  <div style="width:80%" class="info-stars-cover">
+                    <div class="info-stars-layer"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="info-text">制作时间：30分钟<br>主要材料：精选肋排，当季新蒜</div>
+              </div>
+              <div class="info-cost">
+                <div class="info-currency-icon">￥</div>
+                <div class="info-money">42.8</div>
+                <div class="info-money-old">￥62</div>
+                <div class="pull-right num-selector">
+                  <div class="btn-minus touch-active"><i class="fa fa-minus-circle"></i></div>
+                  <div class="num-input">0</div>
+                  <input type="number" value="0" class="num-input-value">
+                  <div class="btn-plus touch-active"><i class="fa fa-plus-circle"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-list">
+        <div class="info-list-title">小吃</div>
+        <div class="col-container info-list-item has-icon">
+          <div class="col-divider"></div>
+          <div class="col col-1of4 col-hp-1of1">
+            <div class="col-content">
+              <div class="info-icon"><i class="fa fa-heart"></i></div><img src="images/list-img-01.png">
+            </div>
+          </div>
+          <div class="col col-3of4">
+            <div class="col-content">
+              <div class="info-box">
+                <div class="info-title">小吃</div>
+                <div class="info-stars">
+                  <div class="info-stars-layer"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+                  <!--通过style的宽度百分比来显示星级数，每10%对应半颗星-->
+                  <div style="width:80%" class="info-stars-cover">
+                    <div class="info-stars-layer"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="info-text">制作时间：30分钟<br>主要材料：精选肋排，当季新蒜</div>
+              </div>
+              <div class="info-cost">
+                <div class="info-currency-icon">￥</div>
+                <div class="info-money">42.8</div>
+                <div class="info-money-old">￥62</div>
+                <div class="pull-right num-selector">
+                  <div class="btn-minus touch-active"><i class="fa fa-minus-circle"></i></div>
+                  <div class="num-input">0</div>
+                  <input type="number" value="0" class="num-input-value">
+                  <div class="btn-plus touch-active"><i class="fa fa-plus-circle"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-list">
+        <div class="info-list-title">饮品</div>
+        <div class="col-container info-list-item has-icon">
+          <div class="col-divider"></div>
+          <div class="col col-1of4 col-hp-1of1">
+            <div class="col-content">
+              <div class="info-icon"><i class="fa fa-heart"></i></div><img src="images/list-img-01.png">
+            </div>
+          </div>
+          <div class="col col-3of4">
+            <div class="col-content">
+              <div class="info-box">
+                <div class="info-title">饮品</div>
+                <div class="info-stars">
+                  <div class="info-stars-layer"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+                  <!--通过style的宽度百分比来显示星级数，每10%对应半颗星-->
+                  <div style="width:80%" class="info-stars-cover">
+                    <div class="info-stars-layer"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="info-text">制作时间：30分钟<br>主要材料：精选肋排，当季新蒜</div>
+              </div>
+              <div class="info-cost">
+                <div class="info-currency-icon">￥</div>
+                <div class="info-money">42.8</div>
+                <div class="info-money-old">￥62</div>
+                <div class="pull-right num-selector">
+                  <div class="btn-minus touch-active"><i class="fa fa-minus-circle"></i></div>
+                  <div class="num-input">0</div>
+                  <input type="number" value="0" class="num-input-value">
+                  <div class="btn-plus touch-active"><i class="fa fa-plus-circle"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footbar footbar-type2">
+        <div class="footbar-content col-content">
+          <div class="col col-2of3">
+            <div class="col-content">
+              <div id="order_num" class="order-num">已选 0 项</div>
+            </div>
+          </div>
+          <div class="col col-1of3">
+            <div class="col-content"><a href="ordered-list.html" class="bx-btn btn-block bg-theme font-white mt-9 touch-active border-capsule">下单</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footbar-space"></div>
+      <div class="footbar">
+        <div class="footbar-content">
+          <div class="col col-1of3"><a href="index.html" class="footbar-btn touch-active">
+              <div class="footbar-btn-icon"><i class="iconfont icon-home"></i></div>
+              <div class="footbar-btn-text">首页</div></a></div>
+          <div class="col col-1of3"><a href="cart.html" class="footbar-btn touch-active">
+              <div class="footbar-btn-icon"><i class="iconfont icon-shopping-cart"></i></div>
+              <div class="footbar-btn-text">购物车</div></a></div>
+          <div class="col col-1of3"><a href="my-order.html" class="footbar-btn touch-active">
+              <div class="footbar-btn-icon"><i class="iconfont icon-list"></i></div>
+              <div class="footbar-btn-text">订单</div></a></div>
+        </div>
+      </div>
+      <div class="footbar-space"></div>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('#topbar_select').tabSwitch({
+              hasTabAll : true, //是否有一个“全部显示”的标签按钮
+              tabBtnClass : 'topbar-select-btn',
+              tabBtnAllClass : 'topbar-select-btn-all',
+              tabBtnActiveClass : 'active',
+              tabItemClass : 'info-list',
+              tabItemActiveClass : 'open',
+              afterTab : afterSelect
+          });
+          
+          function afterSelect(el) {
+              $('#top_select_title').text(el.find('.active').text());
+          }
+          
+          
+          //初始化数字选择
+          $('.info-list-item').numSelector({
+              hideOnZero : true, //当数字为0时，隐藏减小按钮和数字
+              btnPlusClass : 'btn-plus',
+              btnMinusClass : 'btn-minus',
+              numberHtmlClass : 'num-input',
+              numberInputClass : 'num-input-value',
+              afterPlus : afterNumPlus,
+              afterMinus : afterNumMinus,
+              afterInit : afterNumSelectorInit
+          });
+          
+          //菜单列表里某菜的“+”按钮按下时
+          function afterNumPlus(el) {
+              setSelectedClass(el);
+              setOrderedNum();
+              //alert(el.data('numSelector').currentNumber);
+          }
+          
+          //菜单列表里某菜的“-”按钮按下时
+          function afterNumMinus(el) {
+              setSelectedClass(el);
+              setOrderedNum();
+          }
+          
+          //菜单数字选择控件初始化之后执行
+          function afterNumSelectorInit(el) {
+              setSelectedClass(el);
+          }
+          
+          //如果菜单里某菜的选择数量大于0，添加.has-selected样式
+          function setSelectedClass(el) {
+              if(el.data('numSelector').currentNumber > 0) {
+                  el.addClass('has-selected');
+              } else {
+                  el.removeClass('has-selected');
+              }
+          }
+          
+          $('.info-list-item').each(function(){
+              var $this = $(this);
+              //alert($this.data('numSelector').currentNumber);
+          });
+          
+          function setOrderedNum() {
+              var orderNum = 0;
+              $('.info-list-item').each(function(){
+                  var $this = $(this);
+                  var thisNumber = $this.data('numSelector').currentNumber;
+                  orderNum += thisNumber;
+              });
+              
+              $('#order_num').text('已选' + orderNum + '项');
+          }
+          
+          setOrderedNum();
+          
+      });
+    </script>
+  </body>
+</html>

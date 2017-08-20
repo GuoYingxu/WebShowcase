@@ -1,0 +1,12 @@
+{
+	"dic_name" : "行政审批事项的详细名称",
+	"id" : "事项ID",
+	"AcceptDept" : "受理单位",
+	"Address" : "办理地点",
+	"Tel" : "联系电话",
+	"PromiseTimeLimit" : "办理期限",
+	"ProcessCondition" : "办理条件",
+	"Materials" : "data/materials_example.json",
+	"ProcessFoundation" : "设立依据",
+	"Forms" : "data/form_example.json"
+}

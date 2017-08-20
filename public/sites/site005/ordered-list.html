@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="hisense">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>微订单</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="topbar">已点菜单</div>
+      <div class="topbar-space"></div>
+      <div class="mobile-section no-border-top mb-8">
+        <ul class="mobile-info-list">
+          <li>
+            <div class="mobile-info-text-left">三人特惠套餐*1</div>
+            <div class="mobile-info-text-right">￥158.00</div>
+          </li>
+          <li>
+            <div class="mobile-info-text-left">蒜香烤肋排*1</div>
+            <div class="mobile-info-text-right">￥46.00</div>
+          </li>
+          <li>
+            <div class="mobile-info-text-left">土豆牛腩*1</div>
+            <div class="mobile-info-text-right">￥38.00</div>
+          </li>
+          <li>
+            <div class="mobile-info-text-left">西红柿炒鸡蛋*1</div>
+            <div class="mobile-info-text-right">￥12.00</div>
+          </li>
+          <li>
+            <div class="mobile-info-text-left">米饭*3</div>
+            <div class="mobile-info-text-right">￥6.00</div>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-section mb-8">
+        <ul class="mobile-info-list">
+          <li>
+            <div class="mobile-info-text-left">就餐人数</div>
+            <div class="mobile-info-text-right">
+              <div id="num_selector" class="num-selector">
+                <div class="btn-minus touch-active"><i class="fa fa-minus-circle"></i></div>
+                <div class="num-input">0</div>
+                <input type="number" value="0" class="num-input-value">
+                <div class="btn-plus touch-active"><i class="fa fa-plus-circle"></i></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div id="num_canju" class="mobile-info-text-left">餐具*0</div>
+            <div id="num_canju_cost" class="mobile-info-text-right">￥0.00</div>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-section mb-8">
+        <ul class="mobile-info-list">
+          <li>
+            <div class="mobile-info-text-left">合计</div>
+            <div class="mobile-info-text-right text-total">￥285.00</div>
+          </li>
+        </ul>
+      </div>
+      <div class="footbar footbar-type2">
+        <div class="footbar-content col-content">
+          <div class="col col-3of5">
+            <div class="col-content"><a href="payment.html" class="bx-btn bx-btn-medium btn-block bg-theme font-white mt-3 touch-active border-capsule">微信优惠付款</a></div>
+          </div>
+          <div class="col col-2of5">
+            <div class="col-content">
+              <div class="bx-btn bx-btn-medium btn-block bg-gray-66 font-white mt-3 touch-active border-capsule">前台付款</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footbar-space"></div>
+      <div class="footbar">
+        <div class="footbar-content">
+          <div class="col col-1of3"><a href="index.html" class="footbar-btn touch-active">
+              <div class="footbar-btn-icon"><i class="iconfont icon-home"></i></div>
+              <div class="footbar-btn-text">首页</div></a></div>
+          <div class="col col-1of3"><a href="cart.html" class="footbar-btn touch-active">
+              <div class="footbar-btn-icon"><i class="iconfont icon-shopping-cart"></i></div>
+              <div class="footbar-btn-text">购物车</div></a></div>
+          <div class="col col-1of3"><a href="my-order.html" class="footbar-btn touch-active">
+              <div class="footbar-btn-icon"><i class="iconfont icon-list"></i></div>
+              <div class="footbar-btn-text">订单</div></a></div>
+        </div>
+      </div>
+      <div class="footbar-space"></div>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('#num_selector').numSelector({
+              hideOnZero : true, //当数字为0时，隐藏减小按钮和数字
+              btnPlusClass : 'btn-plus',
+              btnMinusClass : 'btn-minus',
+              numberHtmlClass : 'num-input',
+              numberInputClass : 'num-input-value',
+              afterPlus : afterNumPlus,
+              afterMinus : afterNumMinus
+          });
+          
+          function afterNumPlus(el) {
+              setNum(el);
+          }
+          
+          function afterNumMinus(el) {
+              setNum(el);
+          }
+          
+          function setNum(el) {
+              var num = el.data('numSelector').currentNumber;
+              $('#num_canju').text('餐具*' + num);
+              $('#num_canju_cost').text('￥' + num*2 + '.00');
+          }
+          
+          
+      });
+                  
+    </script>
+  </body>
+</html>

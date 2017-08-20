@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="hisense">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>SINOTRANS</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="navbar">
+        <div class="row-container"><a href="index.html" class="logo"><img src="images/logo.png"></a>
+          <div class="nav-shoulder">
+            <div id="login_btn" class="common-btn pull-left mt-16px btn-gray">登录</div>
+            <div class="common-btn pull-left mt-16px btn-lighten">注册</div>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="row-container">
+          <div class="search-box space-16px">
+            <div class="search-box-title mb-16px">海运订舱</div>
+            <form class="inner-content with-clearfix">
+              <div class="col-1of2">
+                <div class="col-content">
+                  <div class="form-control">
+                    <div class="control-label control-label-top">出发港</div>
+                    <input type="text" class="input-text">
+                  </div>
+                </div>
+              </div>
+              <div class="col-1of2">
+                <div class="col-content">
+                  <div class="form-control">
+                    <div class="control-label control-label-top">出发时间</div>
+                    <input type="text" id="starttime" class="input-text">
+                  </div>
+                </div>
+              </div>
+              <div class="col-1of2">
+                <div class="col-content">
+                  <div class="form-control">
+                    <div class="control-label control-label-top">目的港</div>
+                    <input type="text" class="input-text">
+                  </div>
+                </div>
+              </div>
+              <div class="col-1of2">
+                <div class="col-content">
+                  <div class="form-control">
+                    <div class="control-label control-label-top">到港时间</div>
+                    <input type="text" id="endtime" class="input-text">
+                  </div>
+                </div>
+              </div>
+              <div class="col-1of1">
+                <div class="col-content">
+                  <div id="super_search" class="common-btn btn-clean">
+                    <div class="btn-text">高级查询</div>
+                    <div id="super_search_icon" class="common-icon icon-blue icon-triarrow-down"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="super_search_content" style="display:none;" class="col-1of1">
+                <div class="col-1of1">
+                  <div class="col-content with-clearfix">
+                    <div class="form-control">
+                      <div class="control-label control-label-top">船公司</div>
+                      <input type="text" class="input-text">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1of2">
+                  <div class="col-content">
+                    <div class="form-control">
+                      <div class="control-label control-label-top">箱型</div>
+                      <select class="input-select">
+                        <option value="GP">GP</option>
+                        <option value="DP">DP</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1of2">
+                  <div class="col-content">
+                    <div class="form-control">
+                      <div class="control-label control-label-top">关键字</div>
+                      <input type="text" class="input-text">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1of1">
+                  <div class="col-content">
+                    <div class="form-control">
+                      <input type="checkbox" class="input-checkbox mr-5px">
+                      <div class="control-text mr-20px">冷藏</div>
+                      <input type="checkbox" class="input-checkbox mr-5px">
+                      <div class="control-text mr-20px">危险品</div>
+                      <input type="checkbox" class="input-checkbox mr-5px">
+                      <div class="control-text mr-20px">生鲜品</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1of1">
+                <div class="col-content with-clearfix"><a href="search-result.html" class="common-btn pl-20px pr-20px pull-right btn-lighten">
+                    <div class="common-icon icon-btn-left icon-white icon-search"></div>
+                    <div class="btn-text">查询</div></a></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="section-block">
+        <div class="row-container">
+          <div class="inner-content">
+            <div class="col-2of3">
+              <div class="col-content">
+                <div class="titlebox type-b with-clearfix">
+                  <div class="titletext">优惠航线</div>
+                  <div class="titletext-en">DISCOUNT ROUTE</div>
+                  <div class="titleshoulder">
+                    <div class="common-btn btn-clean">
+                      <div class="btn-text">更多</div>
+                      <div class="common-icon icon-blue icon-angelarrow-right"></div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="discount-list">
+                  <li>
+                    <div class="with-clearfix mb-6px">
+                      <div class="discount-route">
+                        <div class="route-text">威海</div>
+                        <div class="route-arrow common-icon icon-white icon-arrow-right"></div>
+                        <div class="route-text">仁川</div>
+                      </div>
+                      <div class="discount-ship">锦江2号</div>
+                    </div>
+                    <div class="discount-info mb-6px">
+                      <div class="discount-info-item">定箱、运输一条龙服务</div>
+                      <div class="discount-info-vline"></div>
+                      <div class="discount-info-item">箱型：GP</div>
+                      <div class="discount-info-vline"></div>
+                      <div class="discount-info-item">航次：20120720E</div>
+                      <div class="discount-info-vline"></div>
+                      <div class="discount-info-item">开航时间：2016-04-11 23:55</div>
+                    </div>
+                    <div class="with-clearfix"><a href="order.html" class="common-btn pull-right btn-lighten pl-16px">
+                        <div class="btn-text">下单预定</div>
+                        <div class="common-icon icon-white icon-btn-right icon-angelarrow-right"></div></a></div>
+                  </li>
+                  <li>
+                    <div class="with-clearfix mb-6px">
+                      <div class="discount-route">
+                        <div class="route-text">广州</div>
+                        <div class="route-arrow common-icon icon-white icon-arrow-right"></div>
+                        <div class="route-text">阿姆斯特丹</div>
+                      </div>
+                      <div class="discount-ship">锦江1号</div>
+                    </div>
+                    <div class="discount-info mb-6px">
+                      <div class="discount-info-item">定箱、运输一条龙服务</div>
+                      <div class="discount-info-vline"></div>
+                      <div class="discount-info-item">箱型：GP</div>
+                      <div class="discount-info-vline"></div>
+                      <div class="discount-info-item">航次：20120720E</div>
+                      <div class="discount-info-vline"></div>
+                      <div class="discount-info-item">开航时间：2016-04-11 23:55</div>
+                    </div>
+                    <div class="with-clearfix"><a href="order.html" class="common-btn pull-right btn-lighten pl-16px">
+                        <div class="btn-text">下单预定</div>
+                        <div class="common-icon icon-white icon-btn-right icon-angelarrow-right"></div></a></div>
+                  </li>
+                  <li>
+                    <div class="with-clearfix mb-6px">
+                      <div class="discount-route">
+                        <div class="route-text">连云港</div>
+                        <div class="route-arrow common-icon icon-white icon-arrow-right"></div>
+                        <div class="route-text">纽约</div>
+                      </div>
+                      <div class="discount-ship">新金桥2号</div>
+                    </div>
+                    <div class="discount-info mb-6px">
+                      <div class="discount-info-item">定箱、运输一条龙服务</div>
+                      <div class="discount-info-vline"></div>
+                      <div class="discount-info-item">箱型：GP</div>
+                      <div class="discount-info-vline"></div>
+                      <div class="discount-info-item">航次：20120720E</div>
+                      <div class="discount-info-vline"></div>
+                      <div class="discount-info-item">开航时间：2016-04-11 23:55</div>
+                    </div>
+                    <div class="with-clearfix"><a href="order.html" class="common-btn pull-right btn-lighten pl-16px">
+                        <div class="btn-text">下单预定</div>
+                        <div class="common-icon icon-white icon-btn-right icon-angelarrow-right"></div></a></div>
+                  </li>
+                  <li>
+                    <div class="with-clearfix mb-6px">
+                      <div class="discount-route">
+                        <div class="route-text">上海</div>
+                        <div class="route-arrow common-icon icon-white icon-arrow-right"></div>
+                        <div class="route-text">福冈</div>
+                      </div>
+                      <div class="discount-ship">锦江2号</div>
+                    </div>
+                    <div class="discount-info mb-6px">
+                      <div class="discount-info-item">定箱、运输一条龙服务</div>
+                      <div class="discount-info-vline"></div>
+                      <div class="discount-info-item">箱型：GP</div>
+                      <div class="discount-info-vline"></div>
+                      <div class="discount-info-item">航次：20120720E</div>
+                      <div class="discount-info-vline"></div>
+                      <div class="discount-info-item">开航时间：2016-04-11 23:55</div>
+                    </div>
+                    <div class="with-clearfix"><a href="order.html" class="common-btn pull-right btn-lighten pl-16px">
+                        <div class="btn-text">下单预定</div>
+                        <div class="common-icon icon-white icon-btn-right icon-angelarrow-right"></div></a></div>
+                  </li>
+                  <li>
+                    <div class="with-clearfix mb-6px">
+                      <div class="discount-route">
+                        <div class="route-text">青岛</div>
+                        <div class="route-arrow common-icon icon-white icon-arrow-right"></div>
+                        <div class="route-text">济州岛</div>
+                      </div>
+                      <div class="discount-ship">韩星仁川</div>
+                    </div>
+                    <div class="discount-info mb-6px">
+                      <div class="discount-info-item">定箱、运输一条龙服务</div>
+                      <div class="discount-info-vline"></div>
+                      <div class="discount-info-item">箱型：GP</div>
+                      <div class="discount-info-vline"></div>
+                      <div class="discount-info-item">航次：20120720E</div>
+                      <div class="discount-info-vline"></div>
+                      <div class="discount-info-item">开航时间：2016-04-11 23:55</div>
+                    </div>
+                    <div class="with-clearfix"><a href="order.html" class="common-btn pull-right btn-lighten pl-16px">
+                        <div class="btn-text">下单预定</div>
+                        <div class="common-icon icon-white icon-btn-right icon-angelarrow-right"></div></a></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-1of3">
+              <div class="col-content"><a href="http://www.sinotrans.com/" target="_blank" class="full-img with-clearfix mb-30px"><img src="images/ad001.png"></a>
+                <div class="titlebox type-b with-clearfix">
+                  <div class="titletext">新闻资讯</div>
+                  <div class="titletext-en">NEWS & INFO</div>
+                  <div class="titleshoulder">
+                    <div class="common-btn btn-clean">
+                      <div class="btn-text">更多</div>
+                      <div class="common-icon icon-blue icon-angelarrow-right"></div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="news-list">
+                  <li><a href="#" class="li-link">
+                      <div class="date-box">
+                        <div class="date-box-date">22</div>
+                        <div class="date-box-year">2016/04</div>
+                      </div>
+                      <div class="news-title">中国外运股份有限公司2015年度业绩发</div>
+                      <div class="news-content">股份公司董事长赵沪湘、执行董事兼总裁李关鹏、董事会秘书高伟，以及财务部...</div></a></li>
+                  <li><a href="#" class="li-link">
+                      <div class="date-box">
+                        <div class="date-box-date">17</div>
+                        <div class="date-box-year">2016/04</div>
+                      </div>
+                      <div class="news-title">中国外运股份有限公司华南区域产品推广</div>
+                      <div class="news-content">3月16日上午10：30，股份公司华南区域“聚 变 共赢”产品推介会在广州隆重举行...</div></a></li>
+                  <li><a href="#" class="li-link">
+                      <div class="date-box">
+                        <div class="date-box-date">02</div>
+                        <div class="date-box-year">2016/04</div>
+                      </div>
+                      <div class="news-title">招商局与中国外运长航召开重组干部大会</div>
+                      <div class="news-content">招商局集团有限公司与中国外运长航集团有限公司在京召开重组干部大会...</div></a></li>
+                  <li><a href="#" class="li-link">
+                      <div class="date-box">
+                        <div class="date-box-date">31</div>
+                        <div class="date-box-year">2016/03</div>
+                      </div>
+                      <div class="news-title">7月1日起SOLAS公约将要求查核载货集装箱</div>
+                      <div class="news-content">从2016年7月1日开始，国际海事组织（IMO）将实施《国际海上人命安全公约》...</div></a></li>
+                  <li><a href="#" class="li-link">
+                      <div class="date-box">
+                        <div class="date-box-date">18</div>
+                        <div class="date-box-year">2016/03</div>
+                      </div>
+                      <div class="news-title">创新2016，让我们一起来！——李关鹏2016新年致辞</div>
+                      <div class="news-content">亲爱的客户、合作伙伴、朋友们：总有些时刻，让我们心潮澎湃！在这新春佳节的...</div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer"> <span>版权所有：2002-2016　中国外运股份有限公司　京ICP备05012207号</span><br><span>Copyright (c) 2002-2016 SINOTRANS All Rights Reserved</span></div>
+      <div class="totop"></div>
+    </div>
+    <div id="login_popup" class="popup">
+      <div id="login_popup_mask" class="popup-mask"></div>
+      <div class="popup-box popup-login space-20px">
+        <div class="login-title mb-20px">用户登录</div>
+        <form class="inner-content">
+          <div class="col-1of1">
+            <div class="col-content">
+              <div class="form-control">
+                <div class="control-label control-label-top">用户名</div>
+                <input type="text" placeholder="请输入用户名" class="input-text">
+              </div>
+            </div>
+          </div>
+          <div class="col-1of1">
+            <div class="col-content">
+              <div class="form-control">
+                <div class="control-label control-label-top">密码</div>
+                <input type="password" placeholder="请输入密码" class="input-text">
+              </div>
+            </div>
+          </div>
+          <div class="col-1of1">
+            <div class="col-content with-clearfix"><a href="index-logined.html" class="common-btn btn-large pl-30px pr-30px pull-right btn-lighten">登录</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

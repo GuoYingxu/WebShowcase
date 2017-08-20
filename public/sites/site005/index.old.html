@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="hisense">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>微订单</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="main-content">
+      <!--布局各项参数对应的css class:-->
+      <!--col-{i}of{j} : i/j宽度-->
+      <!--col-hp-{i}of{j} : 高/宽 = i/j-->
+      <!--col-offsetleft-{i}of{j} : 左偏移i/j宽度-->
+      <!--col-offsetright-{i}of{j} : 右偏移i/j宽度-->
+      <!--col-mt-{n} : margin-top n个单位（n 范围从0到50，即0.0rem到0.5rem, 在320px宽度下0.01rem = 1px)-->
+      <!--col-ml-{n} : margin-left ...-->
+      <!--col-mb-{n} : margin-bottom ...-->
+      <!--col-mr-{n} : margin-right ...-->
+      <div class="col-1of1 col-hp-3of10">
+        <div class="col-content">
+          <div class="abs-content">
+            <div class="slider-content">
+              <div class="slider owl-carousel"><a href="#" class="item"><img src="images/s1.jpg"></a><a href="#" class="item"><img src="images/s2.jpg"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1of1">
+        <div class="col-content">
+          <!--.has-icon 带图标-->
+          <!--.anim-h 水平切换动画-->
+          <!--.text-center 文字水平居中-->
+          <!--.text-right 文字水平靠右-->
+          <!--.icon-border-round 圆角-->
+          <!--.icon-border-capsule 圆形图标-->
+          <!--.type-2 类型2：单行-->
+          <!--.type-3 类型3：增大-->
+          <ul class="text-slider has-icon border-bottom-1 border-gray-e3 icon-border-round">
+            <li><a href="#" class="text-slider-item touch-active">
+                <div class="text-slider-icon"><img src="images/成绩发布.png"></div>
+                <div class="text-slider-content font-gray-33">伴行3618希望做一些改变，让我们在一起，用科技的力量诠释关爱·教育·成长。</div></a></li>
+            <li><a href="#" class="text-slider-item touch-active">
+                <div class="text-slider-icon"><img src="images/通知公告.png"></div>
+                <div class="text-slider-content font-gray-33">用科技的力量诠释关爱·教育·成长,伴行3618希望做一些改变，让我们在一起。</div></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-1of1">
+        <div class="col-content">
+          <div style="height:0.08rem;" class="divider bg-gray-eb"></div>
+        </div>
+      </div>
+      <div class="col-1of1">
+        <div class="col-content">
+          <!--边框、背景色、字体颜色等组件共有参数：-->
+          <!--border-gray-e3 边框颜色，详见下方颜色对照部分-->
+          <!--border-top-{n} 上边框宽度n(px), n范围1px 到 10px-->
+          <!--border-right-{n} 右边框-->
+          <!--border-bottom-{n} 下边框-->
+          <!--border-left-{n} 左边框-->
+          <!--bg-white 背景色，详见下方颜色对照部分-->
+          <!--font-gray-33 字体颜色，，详见下方颜色对照部分-->
+          <div class="textbox">
+            <div class="textbox-content">常用应用</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1of2 col-hp-1of2">
+        <div class="col-content">
+          <!--.has-dot 有红点-->
+          <!--.has-new 有'new'角标-->
+          <!--.border-round 圆角-->
+          <!--.border-round2x 2倍圆角-->
+          <div class="abs-content"><a href="#" class="appbox touch-active has-dot has-new">
+              <div class="new-tag"></div>
+              <div class="appicon full-img"><img src="images/成绩发布.png">
+                <div class="dot"></div>
+              </div>
+              <div class="apptitle">成绩发布</div></a></div>
+        </div>
+      </div>
+      <div class="col-1of4 col-hp-1of1">
+        <div class="col-content"><a href="#" class="appbox touch-active border-gray-e3 border-right-1 border-bottom-1">
+            <div class="appicon full-img"><img src="images/教学计划.png">
+              <div class="dot"></div>
+            </div>
+            <div class="apptitle">教学计划</div></a></div>
+      </div>
+      <div class="col-1of4 col-hp-1of1">
+        <div class="col-content"><a href="#" class="appbox touch-active border-gray-e3 border-bottom-1">
+            <div class="appicon full-img"><img src="images/圈子.png">
+              <div class="dot"></div>
+            </div>
+            <div class="apptitle">圈子</div></a></div>
+      </div>
+      <div class="col-1of3 col-hp-1of1">
+        <div class="col-content"><a href="#" class="appbox touch-active border-gray-e3 border-bottom-1 border-right-1">
+            <div class="appicon full-img"><img src="images/通知公告.png">
+              <div class="dot"></div>
+            </div>
+            <div class="apptitle">通知公告</div></a></div>
+      </div>
+      <div class="col-2of3 col-hp-1of2">
+        <div class="col-content"><a href="#" class="appbox touch-active border-gray-e3 border-bottom-1">
+            <div class="appicon full-img"><img src="images/教学计划.png">
+              <div class="dot"></div>
+            </div>
+            <div class="apptitle">教学计划</div></a></div>
+      </div>
+      <div class="col-1of3 col-hp-2of3">
+        <div class="col-content"><a href="#" class="appbox touch-active border-gray-e3 border-right-1 border-bottom-1">
+            <div class="appicon full-img"><img src="images/圈子.png">
+              <div class="dot"></div>
+            </div>
+            <div class="apptitle">圈子</div></a></div>
+      </div>
+      <div class="col-1of3 col-hp-2of3">
+        <div class="col-content"><a href="#" class="appbox touch-active border-gray-e3 border-right-1 border-bottom-1">
+            <div class="appicon full-img"><img src="images/成绩发布.png">
+              <div class="dot"></div>
+            </div>
+            <div class="apptitle">成绩发布</div></a></div>
+      </div>
+      <div class="col-1of3 col-hp-2of3">
+        <div class="col-content"><a href="#" class="appbox touch-active border-gray-e3 border-bottom-1">
+            <div class="appicon full-img"><img src="images/通知公告.png">
+              <div class="dot"></div>
+            </div>
+            <div class="apptitle">通知公告</div></a></div>
+      </div>
+      <div class="col-1of1">
+        <div class="col-content">
+          <div style="height:0.08rem;" class="divider bg-gray-eb"></div>
+        </div>
+      </div>
+      <div class="col-1of3 col-offsetleft-2of3 col-ml-4 col-mr-8">
+        <div class="col-content">
+          <!--.bx-btn-medium .bx-btn-large 中、大 按钮-->
+          <!--.border-round 圆角-->
+          <!--.border-capsule 胶囊形-->
+          <!--.type-2 图标靠左-->
+          <!--.type-3 图标靠右-->
+          <!--.type-4 图标在上文字在下-->
+          <!--.has-icon 有图标-->
+          <div class="bx-btn touch-active has-icon border-round bg-blue-ocean font-white">
+            <div class="bx-icon"><i class="fa fa-search"></i></div>
+            <div class="bx-text">按钮</div>
+          </div>
+        </div>
+      </div>
+      <div class="footbar">
+        <div class="footbar-content">
+          <div class="col col-1of3">
+            <div class="footbar-btn touch-active sel">
+              <div class="footbar-btn-icon"><i class="iconfont icon-home"></i></div>
+              <div class="footbar-btn-text">首页</div>
+            </div>
+          </div>
+          <div class="col col-1of3"><a href="cart.html" class="footbar-btn touch-active">
+              <div class="footbar-btn-icon"><i class="iconfont icon-shopping-cart"></i></div>
+              <div class="footbar-btn-text">购物车</div></a></div>
+          <div class="col col-1of3"><a href="my-order.html" class="footbar-btn touch-active">
+              <div class="footbar-btn-icon"><i class="iconfont icon-list"></i></div>
+              <div class="footbar-btn-text">订单</div></a></div>
+        </div>
+      </div>
+      <div class="footbar-space"></div>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

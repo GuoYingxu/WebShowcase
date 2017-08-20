@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="hisense">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>微订单</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="col-container">
+        <div class="col-divider"></div>
+        <div class="col col-1of1">
+          <div class="col-content">
+            <div class="payment-title">支付金额：</div>
+          </div>
+        </div>
+        <div class="col col-1of1">
+          <div class="col-content">
+            <div class="payment-cost">
+              <div class="payment-currency">￥</div>
+              <div class="payment-money">285.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-1of1">
+          <div class="col-content">
+            <div class="payment-radio-item">优惠券：满150送果盘
+              <input type="radio" name="quan" class="radio-box">
+            </div>
+            <div class="payment-radio-item">优惠券：单桌满200元享85折优惠
+              <input type="radio" name="quan" class="radio-box">
+            </div>
+            <div class="payment-radio-item">抵金券：30元抵金券
+              <input type="radio" name="quan" class="radio-box">
+            </div>
+          </div>
+        </div>
+        <div class="col col-1of1">
+          <div class="col-content">
+            <div class="payment-check-area">
+              <div class="payment-check-item">开具发票
+                <input id="checkbox_fapiao" type="checkbox" name="fapiao" class="check-box">
+              </div>
+              <input id="input_fapiao" type="text" placeholder="请在此处填写发票信息" class="payment-check-area-input">
+            </div>
+          </div>
+        </div>
+        <div class="col col-3of4 col-offsetleft-1of8">
+          <div class="bx-btn bx-btn-medium btn-block bg-theme font-white touch-active border-capsule mt-20">微信支付</div>
+        </div>
+      </div>
+      <script src="js/vendor.js"></script>
+      <script src="js/app.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+            $('#input_fapiao').hide();
+            $('#checkbox_fapiao').change(function(){
+                if($('#checkbox_fapiao').is(':checked')){
+                    $('#input_fapiao').show();
+                } else {
+                    $('#input_fapiao').hide();
+                }
+            })
+        });
+      </script>
+      <div class="footbar">
+        <div class="footbar-content">
+          <div class="col col-1of3"><a href="index.html" class="footbar-btn touch-active">
+              <div class="footbar-btn-icon"><i class="iconfont icon-home"></i></div>
+              <div class="footbar-btn-text">首页</div></a></div>
+          <div class="col col-1of3"><a href="cart.html" class="footbar-btn touch-active">
+              <div class="footbar-btn-icon"><i class="iconfont icon-shopping-cart"></i></div>
+              <div class="footbar-btn-text">购物车</div></a></div>
+          <div class="col col-1of3"><a href="my-order.html" class="footbar-btn touch-active">
+              <div class="footbar-btn-icon"><i class="iconfont icon-list"></i></div>
+              <div class="footbar-btn-text">订单</div></a></div>
+        </div>
+      </div>
+      <div class="footbar-space"></div>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

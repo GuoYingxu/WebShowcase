@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="renderer" content="webkit">
+        <meta name="description" content="hisense">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <title>DesktopMobileViewer</title>
+        <link rel="stylesheet" href="css/vendor.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="mobile-frame">
+            <iframe class="main-iframe" frameborder="0" src="../index.html"></iframe>
+        </div>
+        <script src="js/vendor.js"></script>
+        <script src="js/app.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                if(device.desktop()) {
+                    var mobile_height = 736;
+                    setMobileTransform();
+                    $(window).resize(function() {
+                        setMobileTransform();
+                    });
+                    function setMobileTransform() {
+                        var scale_value = (app.getViewCtrl().getWinSize().height-40)/mobile_height;
+                        $('.mobile-frame').attr("style","-webkit-transform:scale(" + scale_value + "); -moz-transform:scale(" + scale_value + "); -ms-transform:scale(" + scale_value + "); -o-transform:scale(" + scale_value + "); transform:scale(" + scale_value + ");");
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

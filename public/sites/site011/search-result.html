@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="hisense">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>SINOTRANS</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="navbar">
+        <div class="row-container"><a href="index.html" class="logo"><img src="images/logo.png"></a>
+          <div class="nav-shoulder">
+            <div id="nav_user_btn" class="common-btn pull-left mt-16px btn-gray pl-15px">
+              <div class="btn-text">Admin</div>
+              <div id="nav_user_btn_icon" class="common-icon icon-gray icon-btn-right icon-angelarrow-down"></div>
+            </div>
+            <ul class="nav-user-menu">
+              <li><a href="#">系统设置</a></li>
+              <li><a href="personal-center.html">用户中心</a></li>
+              <li><a href="index.html">注销登录</a></li>
+            </ul>
+            <div class="nav-user-menu-arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="row-container">
+          <div class="search-box space-16px">
+            <div class="search-box-title mb-16px">海运订舱</div>
+            <form class="inner-content with-clearfix">
+              <div class="col-1of2">
+                <div class="col-content">
+                  <div class="form-control">
+                    <div class="control-label control-label-top">出发港</div>
+                    <input type="text" class="input-text">
+                  </div>
+                </div>
+              </div>
+              <div class="col-1of2">
+                <div class="col-content">
+                  <div class="form-control">
+                    <div class="control-label control-label-top">出发时间</div>
+                    <input type="text" id="starttime" class="input-text">
+                  </div>
+                </div>
+              </div>
+              <div class="col-1of2">
+                <div class="col-content">
+                  <div class="form-control">
+                    <div class="control-label control-label-top">目的港</div>
+                    <input type="text" class="input-text">
+                  </div>
+                </div>
+              </div>
+              <div class="col-1of2">
+                <div class="col-content">
+                  <div class="form-control">
+                    <div class="control-label control-label-top">到港时间</div>
+                    <input type="text" id="endtime" class="input-text">
+                  </div>
+                </div>
+              </div>
+              <div class="col-1of1">
+                <div class="col-content">
+                  <div id="super_search" class="common-btn btn-clean">
+                    <div class="btn-text">高级查询</div>
+                    <div id="super_search_icon" class="common-icon icon-blue icon-triarrow-down"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="super_search_content" style="display:none;" class="col-1of1">
+                <div class="col-1of1">
+                  <div class="col-content with-clearfix">
+                    <div class="form-control">
+                      <div class="control-label control-label-top">船公司</div>
+                      <input type="text" class="input-text">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1of2">
+                  <div class="col-content">
+                    <div class="form-control">
+                      <div class="control-label control-label-top">箱型</div>
+                      <select class="input-select">
+                        <option value="GP">GP</option>
+                        <option value="DP">DP</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1of2">
+                  <div class="col-content">
+                    <div class="form-control">
+                      <div class="control-label control-label-top">关键字</div>
+                      <input type="text" class="input-text">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1of1">
+                  <div class="col-content">
+                    <div class="form-control">
+                      <input type="checkbox" class="input-checkbox mr-5px">
+                      <div class="control-text mr-20px">冷藏</div>
+                      <input type="checkbox" class="input-checkbox mr-5px">
+                      <div class="control-text mr-20px">危险品</div>
+                      <input type="checkbox" class="input-checkbox mr-5px">
+                      <div class="control-text mr-20px">生鲜品</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1of1">
+                <div class="col-content with-clearfix"><a href="search-result.html" class="common-btn pl-20px pr-20px pull-right btn-lighten">
+                    <div class="common-icon icon-btn-left icon-white icon-search"></div>
+                    <div class="btn-text">查询</div></a></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="section-block">
+        <div class="row-container">
+          <div class="inner-content">
+            <div class="col-2of3">
+              <div class="col-content">
+                <div class="titlebox type-b with-clearfix">
+                  <div class="titletext">查询结果</div>
+                  <div class="titletext-en">QUERY RESULTS</div>
+                </div>
+                <table class="table type2 mt-20px">
+                  <tr>
+                    <td width="20%" class="th3 text-center">锦江2号</td>
+                    <td class="th2">出发港</td>
+                    <td class="th2">目的港</td>
+                    <td class="th2">尺寸</td>
+                    <td class="th2">箱型</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2" class="th4 text-right discount-label-green">
+                      <div class="discount-label"> 
+                        <div class="discount-label-text">特惠</div>
+                        <div class="common-icon icon-white icon-triarrow-right"></div>
+                      </div>
+                      <div class="discount-line"></div>
+                    </td>
+                    <td>威海</td>
+                    <td>仁川</td>
+                    <td>20</td>
+                    <td>GP</td>
+                  </tr>
+                  <tr>
+                    <td>威海</td>
+                    <td>仁川</td>
+                    <td>40</td>
+                    <td>GP</td>
+                  </tr>
+                  <tr>
+                    <td class="th4 text-right discount-label-red">
+                      <div class="discount-label">
+                        <div class="discount-label-text">优选</div>
+                        <div class="common-icon icon-white icon-triarrow-right"></div>
+                      </div>
+                      <div class="discount-line"></div>
+                    </td>
+                    <td>威海</td>
+                    <td>仁川</td>
+                    <td>20</td>
+                    <td>GP</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="no-bottom"><a href="order.html" class="common-btn pull-right btn-lighten pl-16px">
+                        <div class="btn-text">下单预定</div>
+                        <div class="common-icon icon-white icon-btn-right icon-angelarrow-right"></div></a></td>
+                  </tr>
+                </table>
+                <table class="table type2 mt-20px">
+                  <tr>
+                    <td width="20%" class="th3 text-center">泰坦尼克号</td>
+                    <td class="th2">出发港</td>
+                    <td class="th2">目的港</td>
+                    <td class="th2">尺寸</td>
+                    <td class="th2">箱型</td>
+                  </tr>
+                  <tr>
+                    <td class="th4 text-right discount-label-green">
+                      <div class="discount-label"> 
+                        <div class="discount-label-text">特惠</div>
+                        <div class="common-icon icon-white icon-triarrow-right"></div>
+                      </div>
+                      <div class="discount-line"></div>
+                    </td>
+                    <td>伦敦</td>
+                    <td>阿姆斯特丹</td>
+                    <td>40</td>
+                    <td>GP</td>
+                  </tr>
+                  <tr>
+                    <td class="th4 text-right discount-label-red">
+                      <div class="discount-label">
+                        <div class="discount-label-text">优选</div>
+                        <div class="common-icon icon-white icon-triarrow-right"></div>
+                      </div>
+                      <div class="discount-line"></div>
+                    </td>
+                    <td>伦敦</td>
+                    <td>阿姆斯特丹</td>
+                    <td>20</td>
+                    <td>GP</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="no-bottom"><a href="order.html" class="common-btn pull-right btn-lighten pl-16px">
+                        <div class="btn-text">下单预定</div>
+                        <div class="common-icon icon-white icon-btn-right icon-angelarrow-right"></div></a></td>
+                  </tr>
+                </table>
+                <table class="table type2 mt-20px">
+                  <tr>
+                    <td width="20%" class="th3 text-center">飞翔的荷兰人号</td>
+                    <td class="th2">出发港</td>
+                    <td class="th2">目的港</td>
+                    <td class="th2">尺寸</td>
+                    <td class="th2">箱型</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3" class="th4 text-right discount-label-red">
+                      <div class="discount-label"> 
+                        <div class="discount-label-text">优选</div>
+                        <div class="common-icon icon-white icon-triarrow-right"></div>
+                      </div>
+                      <div class="discount-line"></div>
+                    </td>
+                    <td>鹿特丹</td>
+                    <td>纽约</td>
+                    <td>20</td>
+                    <td>GP</td>
+                  </tr>
+                  <tr>
+                    <td>鹿特丹</td>
+                    <td>纽约</td>
+                    <td>40</td>
+                    <td>GP</td>
+                  </tr>
+                  <tr>
+                    <td>鹿特丹</td>
+                    <td>纽约</td>
+                    <td>60</td>
+                    <td>GP</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2" class="th4 text-right discount-label-green">
+                      <div class="discount-label"> 
+                        <div class="discount-label-text">特惠</div>
+                        <div class="common-icon icon-white icon-triarrow-right"></div>
+                      </div>
+                      <div class="discount-line"></div>
+                    </td>
+                    <td>纽约</td>
+                    <td>鹿特丹</td>
+                    <td>20</td>
+                    <td>MP</td>
+                  </tr>
+                  <tr>
+                    <td>纽约</td>
+                    <td>鹿特丹</td>
+                    <td>40</td>
+                    <td>MP</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="no-bottom"><a href="order.html" class="common-btn pull-right btn-lighten pl-16px">
+                        <div class="btn-text">下单预定</div>
+                        <div class="common-icon icon-white icon-btn-right icon-angelarrow-right"></div></a></td>
+                  </tr>
+                </table>
+                <div class="quotes"><span class="disabled">&lt;</span><span class="current">1</span><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">&gt;</a></div>
+              </div>
+            </div>
+            <div class="col-1of3">
+              <div class="col-content">
+                <div class="full-img with-clearfix"><img src="images/ad001.png"></div>
+              </div>
+              <div class="col-content">
+                <div class="titlebox type-b with-clearfix">
+                  <div class="titletext">历史查询</div>
+                  <div class="titletext-en">QUERY HISTORY</div>
+                </div>
+                <ul class="text-list dot-list underline-list">
+                  <li><a href="#" target="_blank" title="出发港：青岛，到达港：仁川，出发时间：2016年4月15日 22:00">出发港：青岛，到达港：仁川，出发时间：2016年4月15日 22:00</a></li>
+                  <li><a href="#" target="_blank" title="到达港：仁川，出发时间：2016.04.01">到达港：仁川，出发时间：2016.04.01</a></li>
+                  <li><a href="#" target="_blank" title="出发港：上海，到达港：阿姆斯特丹，出发时间2016.4.23">出发港：上海，到达港：阿姆斯特丹，出发时间2016.4.23</a></li>
+                  <li><a href="#" target="_blank" title="出发港：威海，到达港：济州，箱型：GP">出发港：威海，到达港：济州，箱型：GP</a></li>
+                  <li><a href="#" target="_blank" title="出发港：仁川，到达港：青岛，出发时间：2016年4月15日 22:00">出发港：仁川，到达港：青岛，出发时间：2016年4月15日 22:00</a></li>
+                </ul>
+              </div>
+              <div class="col-content">
+                <div class="titlebox type-b with-clearfix">
+                  <div class="titletext">优惠航线</div>
+                  <div class="titletext-en">DISCOUNT ROUTE</div>
+                </div>
+                <ul class="text-list dot-list underline-list">
+                  <li><a href="#" target="_blank">威海 - 仁川 / 锦江2号 / 航次：219908E</a></li>
+                  <li><a href="#" target="_blank">广州 - 阿姆斯特丹 / 新金桥2 / 航次：2350E</a></li>
+                  <li><a href="#" target="_blank">上海 - 福冈 / HONGDAXIN29 / 航次：1970E</a></li>
+                  <li><a href="#" target="_blank">广州 - 阿姆斯特丹 / 新金桥2 / 航次：2350E</a></li>
+                  <li><a href="#" target="_blank">上海 - 福冈 / HONGDAXIN29 / 航次：1970E</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer"> <span>版权所有：2002-2016　中国外运股份有限公司　京ICP备05012207号</span><br><span>Copyright (c) 2002-2016 SINOTRANS All Rights Reserved</span></div>
+      <div class="totop"></div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
