@@ -1,0 +1,29 @@
+<html>
+  <head>
+
+   
+  </head>
+  <body>
+    <div id='list'></div>
+    <button id="getTime">click</button>
+    <script >
+      document.getElementById('getTime').addEventListener('click',getTime)
+        function getTime(){
+          var date = new Date();
+          var div = document.createElement('div')
+          var h =document.createElement('span')
+            h.innerText = date.getHours() + ':'
+          var m = document.createElement('span')
+          m.innerText =date.getMinutes() + ':'
+          var s = document.createElement('span')
+          s.innerText = date.getSeconds()
+
+          div.appendChild(h).appendChild(m).appendChild(s)
+
+          
+          document.getElementById('list').appendChild(div)
+
+        } 
+      </script>
+  </body>
+</html>
