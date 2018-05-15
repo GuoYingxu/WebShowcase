@@ -36,7 +36,7 @@ module.exports = {
       user : 'guoyingxu',
       host : '47.92.100.38',
       ref  : 'origin/master',
-      repo : 'https://github.com/GuoYingxu/WebShowcase.git',
+      repo : 'git@github.com:GuoYingxu/WebShowcase.git',
       path : '/var/www/webshowcase/production',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     },
@@ -44,7 +44,7 @@ module.exports = {
       user : 'guoyingxu',
       host : '47.92.100.38',
       ref  : 'origin/master',
-      repo : 'https://github.com/GuoYingxu/WebShowcase.git',
+      repo : 'git@github.com:GuoYingxu/WebShowcase.git',
       path : '/var/www/webshowcase/production',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
       env  : {
