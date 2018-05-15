@@ -10,11 +10,11 @@ module.exports = {
       name      : 'webshowcase',
       script    : 'index.js',
       env: {
-        PORT:3028,
+        PORT:3000,
         COMMON_VARIABLE: 'true'
       },
       env_production : {
-        PORT: 3028,
+        PORT: 3000,
         NODE_ENV: 'production'
       }
     }
@@ -37,7 +37,7 @@ module.exports = {
       host : '47.92.100.38',
       ref  : 'origin/master',
       repo : 'https://github.com/GuoYingxu/WebShowcase.git',
-      path : '/data/pm2deploy/production/webshowcase',
+      path : '/var/www/webshowcase/production',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     },
     dev : {
@@ -45,7 +45,7 @@ module.exports = {
       host : '47.92.100.38',
       ref  : 'origin/master',
       repo : 'https://github.com/GuoYingxu/WebShowcase.git',
-      path : '/data/pm2deploy/develop/webshowcase',
+      path : '/var/www/webshowcase/production',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
       env  : {
         NODE_ENV: 'dev'
