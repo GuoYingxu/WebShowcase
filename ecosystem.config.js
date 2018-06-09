@@ -34,7 +34,8 @@ module.exports = {
   deploy : {
     production : {
       user : 'guoyingxu',
-      host : '47.92.100.38',
+      // host : '47.92.100.38',
+      host: '47.104.222.17',
       ref  : 'origin/master',
       repo : 'git@github.com:GuoYingxu/WebShowcase.git',
       path : '/var/www/webshowcase/production',
@@ -42,7 +43,8 @@ module.exports = {
     },
     dev : {
       user : 'guoyingxu',
-      host : '47.92.100.38',
+      // host : '47.92.100.38',
+      host: '47.104.222.17',
       ref  : 'origin/master',
       repo : 'git@github.com:GuoYingxu/WebShowcase.git',
       path : '/var/www/webshowcase/production',
