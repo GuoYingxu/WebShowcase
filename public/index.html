@@ -18,6 +18,22 @@
         <div class="top-space"></div>
         <div class="container row-space-common">
             <div class="row top-row">
+                <div class="col-md-4 col-sm-6 col-xs-12 touch-active imagecontent" data-toggle="sitelinker" data-sitelink="sites/site015/index.html" data-sitetype="mobile">
+                    <div class="abs-container abs-hp-9of16">
+                        <div class="abs-content imagebox">
+                            <div class="imageborder"></div><img src="images/screen_015.png">
+                        </div>
+                    </div>
+                    <div class="imagelabel">H5摇一摇</div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 touch-active imagecontent" data-toggle="sitelinker" data-sitelink="sites/site016/index.html" data-sitetype="desktop-responsive">
+                    <div class="abs-container abs-hp-9of16">
+                        <div class="abs-content imagebox">
+                            <div class="imageborder"></div><img src="images/screen_016.png">
+                        </div>
+                    </div>
+                    <div class="imagelabel">H5场景360度</div>
+                </div>
                 <div class="col-md-4 col-sm-6 col-xs-12 touch-active imagecontent" data-toggle="sitelinker" data-sitelink="sites/site001/index.html" data-sitetype="desktop">
                     <div class="abs-container abs-hp-9of16">
                         <div class="abs-content imagebox">
@@ -139,13 +155,13 @@
                 var el_top_tip = $('.top-tip');
                 var el_body = $('body');
                 var tipTimer = null;
-                
+
                 var showTopTip = function(tiptext, showtime) {
                     if(!showtime) {
                         showtiem = 2000;
                     }
                     el_top_tip.html(tiptext);
-                    
+
                     if(el_top_tip.hasClass('show')) {
                         if(el_top_tip.hasClass('shake_1')) {
                             el_top_tip.removeClass('shake_1');
@@ -159,7 +175,7 @@
                     } else {
                         el_top_tip.addClass('show');
                     }
-                    
+
                     if(tipTimer != null) {
                         window.clearTimeout(tipTimer);
                     }
@@ -169,13 +185,13 @@
                         el_top_tip.removeClass('shake_2');
                         window.clearTimeout(tipTimer);
                     },showtime);
-            
+
                 };
-                
+
                 el_body.bind('ui.showtoptip', function(evt,tiptext, showtime){
                     showTopTip(tiptext,showtime);
                 });
-                
+
                 $('[data-toggle="sitelinker"]').each(function(){
                     $(this).on('click tap', function(){
                         var site_type = $(this).attr('data-sitetype');
